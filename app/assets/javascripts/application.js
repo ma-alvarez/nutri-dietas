@@ -150,6 +150,19 @@ function social_security() {
 			$("#user_social_security_plan").val('')
 			break;
 
+		case "PREMEDIC":
+			$("#user_social_security_plan").children('option').hide();
+			$("#user_social_security_plan").children('option[value="0-50"]').show();
+			$("#user_social_security_plan").children('option[value="100"]').show();
+			$("#user_social_security_plan").children('option[value="PMO"]').show();
+			$("#user_social_security_plan").children('option[value="C100"]').show();
+			$("#user_social_security_plan").children('option[value="200"]').show();
+			$("#user_social_security_plan").children('option[value="500"]').show();
+			$("#user_social_security_plan").children('option[value="300"]').show();
+			$("#user_social_security_plan").children('option[value="400"]').show();
+			$("#user_social_security_plan").children('option[value=""]').show();
+			$("#user_social_security_plan").val('')
+			break;
 
 		default:
 			$("#user_social_security_plan").children('option').hide();
