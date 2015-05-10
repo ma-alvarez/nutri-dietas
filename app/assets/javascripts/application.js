@@ -89,6 +89,66 @@ function allergies() {
 	}      
 }
 
+function social_security() {
+	switch($('#user_social_security').val()) {
+		case "PARTICULAR":
+			$("#user_social_security_plan").children('option[value="210"]').hide();
+			$("#user_social_security_plan").children('option[value="310"]').hide();
+			$("#user_social_security_plan").children('option[value="410"]').hide();
+			$("#user_social_security_plan").children('option[value="510"]').hide();
+			$("#user_social_security_plan").children('option[value="450"]').hide();
+			$("#user_social_security_plan").children('option[value="PLATA"]').hide();
+			$("#user_social_security_plan").children('option[value="ORO"]').hide();
+			$("#user_social_security_plan").children('option[value="GRADUADOS"]').hide();
+			$("#user_social_security_plan").children('option[value="ALUMNOS"]').hide();
+			$("#user_social_security_plan").children('option[value=""]').hide();
+			$("#user_social_security_plan").children('option[value="PARTICULAR"]').show();
+			$("#user_social_security_plan").val('PARTICULAR')
+			break;
+		case "OSDE":
+			$("#user_social_security_plan").children('option[value="210"]').show();
+			$("#user_social_security_plan").children('option[value="310"]').show();
+			$("#user_social_security_plan").children('option[value="410"]').show();
+			$("#user_social_security_plan").children('option[value="510"]').show();
+			$("#user_social_security_plan").children('option[value="450"]').show();
+			$("#user_social_security_plan").children('option[value="PARTICULAR"]').hide();
+			$("#user_social_security_plan").children('option[value="PLATA"]').hide();
+			$("#user_social_security_plan").children('option[value="ORO"]').hide();
+			$("#user_social_security_plan").children('option[value="GRADUADOS"]').hide();
+			$("#user_social_security_plan").children('option[value="ALUMNOS"]').hide();
+			$("#user_social_security_plan").children('option[value=""]').hide();
+			$("#user_social_security_plan").val('')
+			break;
+		case "DOSUBA":
+			$("#user_social_security_plan").children('option[value="210"]').hide();
+			$("#user_social_security_plan").children('option[value="310"]').hide();
+			$("#user_social_security_plan").children('option[value="410"]').hide();
+			$("#user_social_security_plan").children('option[value="510"]').hide();
+			$("#user_social_security_plan").children('option[value="450"]').hide();
+			$("#user_social_security_plan").children('option[value="PARTICULAR"]').hide();
+			$("#user_social_security_plan").children('option[value="PLATA"]').hide();
+			$("#user_social_security_plan").children('option[value="ORO"]').hide();
+			$("#user_social_security_plan").children('option[value="GRADUADOS"]').show();
+			$("#user_social_security_plan").children('option[value="ALUMNOS"]').show();
+			$("#user_social_security_plan").children('option[value=""]').hide();
+			$("#user_social_security_plan").val('')
+			break;
+		default:
+			$("#user_social_security_plan").children('option[value="210"]').show();
+			$("#user_social_security_plan").children('option[value="310"]').show();
+			$("#user_social_security_plan").children('option[value="410"]').show();
+			$("#user_social_security_plan").children('option[value="510"]').show();
+			$("#user_social_security_plan").children('option[value="450"]').show();
+			$("#user_social_security_plan").children('option[value="PLATA"]').show();
+			$("#user_social_security_plan").children('option[value="ORO"]').show();
+			$("#user_social_security_plan").children('option[value="GRADUADOS"]').show();
+			$("#user_social_security_plan").children('option[value="ALUMNOS"]').show();
+			$("#user_social_security_plan").children('option[value="PARTICULAR"]').show();
+			$("#user_social_security_plan").val('')
+			break;  
+		}
+
+}
 $(document).on("ready page:change", function() {
 	how_meet();
 	allergies();
@@ -96,6 +156,7 @@ $(document).on("ready page:change", function() {
 	smoker();
 	half_vegetarian();
 	menstruation();
+	social_security();
 	$('.datepicker').datepicker({
     	format: "dd/mm/yyyy",
     	startView: 2,
@@ -108,5 +169,6 @@ $(document).on("ready page:change", function() {
 	$('#user_sex').bind('change',function () {menstruation();});
 	$('#user_smoker').bind('change',function () {smoker();});
 	$('#registration_half_vegetarian').bind('change',function () {half_vegetarian();});
+	$('#user_social_security').bind('change',function () {social_security();});
 	
 });
