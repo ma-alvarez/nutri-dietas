@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150403183636) do
+ActiveRecord::Schema.define(version: 20150520184822) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -80,6 +80,18 @@ ActiveRecord::Schema.define(version: 20150403183636) do
     t.integer  "merienda_fruits"
     t.integer  "merienda_lacteals"
     t.integer  "merienda_starch"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "histories", force: true do |t|
+    t.date     "date"
+    t.decimal  "weight"
+    t.decimal  "waist"
+    t.decimal  "hip"
+    t.decimal  "leg"
+    t.decimal  "fat"
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"

@@ -15,6 +15,7 @@ class User < ActiveRecord::Base
   SPORT = [[],['1',1],['2',2],['3',3],['4',4],['5',5],['6',6],['7',7]]
 
   has_one :diet
+  has_many :histories
   accepts_nested_attributes_for :diet
 
 end
