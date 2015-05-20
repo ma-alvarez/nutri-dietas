@@ -205,8 +205,8 @@ es:
     pm: pm
   activerecord:
     models: 
-      publication: Publicación
       user: Usuario
+      diet: Dieta
     attributes:
       user:
         email: "Correo electrónico"
@@ -281,6 +281,37 @@ es:
         sport3: "Actividad fisica"
         sport3_frecuency: "Frecuencia semanal"
         menstruation: "Ultima menstruacion"
-        how_meet: "¿Cómo conoció a la Prof. Lic. Gabin de Sardoy?"
+        how_meet: "¿Cómo conoció a la Prof. Lic. Gabin?"
         comments: "Comentarios:"
         buys: "¿Quién hace las compras?"
+      diet:
+        fecal_incontinence: "Incontinencia fecal"
+        hemacromotosis: "Hemacromotosis"
+        celiac: "Celiacos"
+        irritable_colon: "Colon irritable"
+        pregnancy: "Embarazadas"
+        ovolact: "Ovolactos"
+        kosher: "Kosher"
+        without_fibers: "Sin fibras"
+        allowed_foods: "Alimentos permitidos"
+        breakfast_fruits: "Porciones de fruta en el desayuno"
+        breakfast_lacteals: "Porciones de lacteo en el desayuno"
+        breakfast_starch: "Porciones de almidón en el desayuno"
+        collation_fruits: "Porciones de fruta en la colación"
+        collation_lacteals: "Porciones de lacteo en la colación"
+        collation_starch: "Porciones de almidón en la colación"
+        lunch_starch: "Porciones de almidón en el almuerzo"
+        lunch_vegetables: "Porciones de vegetales en el almuerzo"
+        luch_fats: "Porciones de grasa en el almuerzo"
+        lunch_fruits: "Porciones de fruta en el almuerzo"
+        lunch_lacteals: "Porciones de lacteo en el almuerzo"
+        lunch_meats: "Porciones de carne en el almuerzo"
+        merienda_fruits: "Porciones de fruta en la merienda"
+        merienda_lacteals: "Porciones de lacteo en la merienda"
+        merienda_starch: "Porciones de almidón en la merienda"
+        dinner_starch: "Porciones de almidón en la cena"
+        dinner_vegetables: "Porciones de vegetales en la cena"
+        dinner_fats: "Porciones de grasa en la cena"
+        dinner_fruits: "Porciones de fruta en la cena"
+        dinner_lacteals: "Porciones de lacteo en la cena"
+        dinner_meats: "Porciones de carne en la cena"

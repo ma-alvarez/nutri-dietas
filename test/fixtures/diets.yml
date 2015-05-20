@@ -1,0 +1,65 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fecal_incontinence: 
+  hemacromotosis: 
+  celiac: 
+  irritable_colon: 
+  pregnancy: 
+  ovolact: 
+  kosher: 
+  without_fibers: 
+  breakfast_fruits: 1
+  breakfast_lacteals: 1
+  breakfast_starch: 1
+  collation_fruits: 1
+  collation_lacteals: 1
+  collation_starch: 1
+  lunch_starch: 1
+  lunch_vegetables: 1
+  luch_fats: 1
+  lunch_fruits: 1
+  lunch_lacteals: 1
+  lunch_meats: 1
+  dinner_starch: 1
+  dinner_vegetables: 1
+  dinner_fats: 1
+  dinner_fruits: 1
+  dinner_lacteals: 1
+  dinner_meats: 1
+  merienda_fruits: 1
+  merienda_lacteals: 1
+  merienda_starch: 1
+  user_id: 1
+
+two:
+  fecal_incontinence: 
+  hemacromotosis: 
+  celiac: 
+  irritable_colon: 
+  pregnancy: 
+  ovolact: 
+  kosher: 
+  without_fibers: 
+  breakfast_fruits: 1
+  breakfast_lacteals: 1
+  breakfast_starch: 1
+  collation_fruits: 1
+  collation_lacteals: 1
+  collation_starch: 1
+  lunch_starch: 1
+  lunch_vegetables: 1
+  luch_fats: 1
+  lunch_fruits: 1
+  lunch_lacteals: 1
+  lunch_meats: 1
+  dinner_starch: 1
+  dinner_vegetables: 1
+  dinner_fats: 1
+  dinner_fruits: 1
+  dinner_lacteals: 1
+  dinner_meats: 1
+  merienda_fruits: 1
+  merienda_lacteals: 1
+  merienda_starch: 1
+  user_id: 1

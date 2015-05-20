@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150306183005) do
+ActiveRecord::Schema.define(version: 20150403183636) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -48,6 +48,42 @@ ActiveRecord::Schema.define(version: 20150306183005) do
 
   add_index "admin_users", ["email"], name: "index_admin_users_on_email", unique: true, using: :btree
   add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true, using: :btree
+
+  create_table "diets", force: true do |t|
+    t.boolean  "fecal_incontinence"
+    t.boolean  "hemacromotosis"
+    t.boolean  "celiac"
+    t.boolean  "irritable_colon"
+    t.boolean  "pregnancy"
+    t.boolean  "ovolact"
+    t.boolean  "kosher"
+    t.boolean  "without_fibers"
+    t.boolean  "allowed_foods"
+    t.integer  "breakfast_fruits"
+    t.integer  "breakfast_lacteals"
+    t.integer  "breakfast_starch"
+    t.integer  "collation_fruits"
+    t.integer  "collation_lacteals"
+    t.integer  "collation_starch"
+    t.integer  "lunch_starch"
+    t.integer  "lunch_vegetables"
+    t.integer  "luch_fats"
+    t.integer  "lunch_fruits"
+    t.integer  "lunch_lacteals"
+    t.integer  "lunch_meats"
+    t.integer  "dinner_starch"
+    t.integer  "dinner_vegetables"
+    t.integer  "dinner_fats"
+    t.integer  "dinner_fruits"
+    t.integer  "dinner_lacteals"
+    t.integer  "dinner_meats"
+    t.integer  "merienda_fruits"
+    t.integer  "merienda_lacteals"
+    t.integer  "merienda_starch"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false

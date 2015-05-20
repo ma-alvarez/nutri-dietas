@@ -1,5 +1,10 @@
 ActiveAdmin.register User do
-  permit_params :email, :password, :password_confirmation,:name,:last_name,:address,:city,:country,:phone,:cellphone,:social_security,:social_security_plan,:social_security_number,:marital_status,:birhtday,:profesion,:sex,:job_hs,:job_type,:weight_max,:weight_min,:weight_avg,:weight_now,:weight_exp,:objective,:family,:cooks,:buys,:allergies,:kosher,:vegetarian,:ovolacto,:lacto,:pork,:meat,:chicken,:fish,:celiac,:swallowing,:mastication,:nausea,:diarrhea,:vomits,:constipation,:anemia,:hypertension,:diabetes,:heart_problems,:overweight,:cholesterol,:bulimia,:anorexia,:cancer,:cancer_type,:illness_other,:smoker,:smoker_amount,:medication,:wrist_size,:height,:vitamins,:sport1,:sport1_frecuency,:sport2,:sport2_frecuency,:sport3,:sport3_frecuency,:menstruation,:how_meet,:comments,:intestinal_diseases
+  controller do
+    def permitted_params
+      params.permit! # allow all parameters
+    end
+  end
+
   index do
     selectable_column
     id_column
@@ -18,7 +23,7 @@ ActiveAdmin.register User do
   filter :cellphone
 
   form do |f|
-    f.inputs "User Details" do
+    f.inputs "Detalles de Usuario" do
       f.input :email
       f.input :name
       f.input :last_name
@@ -93,6 +98,40 @@ ActiveAdmin.register User do
         f.input :password_confirmation
       end
     end
+
+    f.inputs "Detalles de la Dieta", for: [:diet, f.object.diet || f.object.build_diet] do |d|
+      d.input :fecal_incontinence
+      d.input :hemacromotosis
+      d.input :celiac
+      d.input :irritable_colon
+      d.input :pregnancy
+      d.input :ovolact
+      d.input :kosher
+      d.input :without_fibers
+      d.input :allowed_foods
+      d.input :breakfast_fruits
+      d.input :breakfast_lacteals
+      d.input :breakfast_starch
+      d.input :collation_fruits
+      d.input :collation_lacteals
+      d.input :collation_starch
+      d.input :lunch_starch
+      d.input :lunch_vegetables
+      d.input :luch_fats
+      d.input :lunch_fruits
+      d.input :lunch_lacteals
+      d.input :lunch_meats
+      d.input :merienda_fruits
+      d.input :merienda_lacteals
+      d.input :merienda_starch
+      d.input :dinner_starch
+      d.input :dinner_vegetables
+      d.input :dinner_fats
+      d.input :dinner_fruits
+      d.input :dinner_lacteals
+      d.input :dinner_meats
+    end
+
     f.actions
   end
 
