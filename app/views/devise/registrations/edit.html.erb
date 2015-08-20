@@ -1,8 +1,48 @@
-<h2>Edit <%= resource_name.to_s.humanize %></h2>
+<%= render :partial => 'dashboard/navigation' %>
+<div class="container theme-showcase" role="main">
+  <div class="jumbotron">
+    <div class="container">
+      <h1>Datos de Usuario</h1>
+      <p>En esta seccion de la aplicacion se le permitira a usted ver los datos personales asociados a su cuenta, asi como modificar alguno de estos y/o dar de baja su cuenta.</p>
+      <p><a class="btn btn-lg btn-primary" href="/static_pages/help" role="button">Conocer mas &raquo;</a></p>
+    </div>
+  </div>
+</div>
+<div class="container theme-showcase" role="main">
+  <div class="page-header">
+        <h2>Datos de <%=current_user.name %></h2>
+  </div>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= devise_error_messages! %>
-
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :last_name %><br />
+    <%= f.text_field :last_name %>
+  </div> 
+  <div class="field">
+    <%= f.label :address %><br />
+    <%= f.text_field :address %>
+  </div>  
+  <div class="field">
+    <%= f.label :city %><br />
+    <%= f.text_field :city %>
+  </div>  
+  <div class="field">
+    <%= f.label :country %><br />
+    <%= f.text_field :country %>
+  </div>  
+   <div class="field">
+    <%= f.label :phone %><br />
+    <%= f.text_field :phone %>
+  </div> 
+   <div class="field">
+    <%= f.label :cellphone %><br />
+    <%= f.text_field :cellphone %>
+  </div> 
   <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true %>
@@ -37,3 +77,13 @@
 <p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
 
 <%= link_to "Back", :back %>
+
+
+
+
+
+  <hr>
+  <footer>
+    <p>&copy;   Esta pagina no suplanta la visita al consultorio...</p>
+  </footer>
+</div>
