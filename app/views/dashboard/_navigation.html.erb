@@ -12,9 +12,9 @@
     <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
         <li><%= link_to 'Inicio', root_path, class:"navbar-brand" %></li>
-        <li><%= link_to 'Dieta', current_user.diet, class:"navbar-brand" %></li>
-        <li><a class="navbar-brand" href="#contact">Medidas</a></li>
-        <li><a class="navbar-brand" href="#contact">Estadisticas</a></li>
+        <li><%= link_to 'Dieta', current_user.diet, class:"navbar-brand" %></li>history_index_path
+        <li><%= link_to 'Medidas', history_create_path, class:"navbar-brand" %>
+        <li><%= link_to 'Estadisticas', history_index_path, class:"navbar-brand" %>
         <li><%= link_to 'Ayuda', static_pages_help_path, class:"navbar-brand" %></li>
         <li class="dropdown">
           <a href="#" class="navbar-brand" data-toggle="dropdown" role="button" aria-expanded="false"><%=current_user.name %><span class="caret"></span></a>
