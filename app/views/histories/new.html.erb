@@ -5,38 +5,65 @@
 		<div class="container">
 			<h1>Medidas</h1>
 			<p>En esta seccion usted podra ingreasar sus medidas al sistema, de forma tal de llevar un control de evolucion y ahorrar tiempo en su visita al consultorio.</p>
-        <p><a class="btn btn-lg btn-primary" href="/static_pages/help" role="button">Conocer mas &raquo;</a></p>
-		</div>
-	</div>
+            <p><a class="btn btn-lg btn-primary" href="/static_pages/help" role="button">Conocer mas &raquo;</a></p>
+        </div>
+    </div>
 </div>
 <div class="container theme-showcase" role="main">
 	<div class="page-header">
         <h2>Cargar Medidas</h2>
-	</div>
-		<div class="form-group">
-        	<%= f.label :weight%>
-            <%= f.text_field :weight, autofocus: true , class: "form-control" %>
-        </div>
-        <div class="form-group">
-        	<%= f.label :waist%>
-            <%= f.text_field :waist, autofocus: true , class: "form-control" %>
-        </div>
+    </div>
+    <div class = "row">
+        <div class="col-md-2">
+          <div class="form-group">
+           <%= f.label :weight%>
+           <div class="input-group">
+           <%= f.text_field :weight, autofocus: true , class: "form-control" %>
+           <div class="input-group-addon">kg</div>
+       </div>
+       </div>
+   </div>
+   <div class="col-md-1"></div>
+   <div class="col-md-2">
+    <div class="form-group">
+       <%= f.label :waist%>
+       <div class="input-group">
+       <%= f.text_field :waist, autofocus: true , class: "form-control" %>
+       <div class="input-group-addon">cm</div>
+   </div>
+   </div>
+</div>
+</div>
+<div class = "row">
+    <div class="col-md-2">
         <div class="form-group">
         	<%= f.label :hip%>
+            <div class="input-group">
             <%= f.text_field :hip, autofocus: true , class: "form-control" %>
         </div>
+    </div>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-2">
         <div class="form-group">
         	<%= f.label :leg%>
+            <div class="input-group">
             <%= f.text_field :leg, autofocus: true , class: "form-control" %>
+            <div class="input-group-addon">cm</div>
         </div>
-        <div class="form-group">
-        	<%= f.label :fat%>
-            <%= f.text_field :fat, autofocus: true , class: "form-control" %>
         </div>
-
-
-
-
+    </div>
+</div>
+<div class = "row">
+<div class="col-md-3">
+    <div class="form-group">
+       <%= f.label :fat%>
+       <div class="input-group">
+       <%= f.text_field :fat, autofocus: true , class: "form-control" %>
+   </div>
+   </div>
+</div>
+</div>
 	<div class="form-group">
       <%= f.submit "Cargar", class: 'btn btn-lg btn-primary btn-block' %>
     </div>
@@ -44,5 +71,4 @@
 	<footer>
 		<p>&copy;   Esta pagina no suplanta la visita al consultorio...</p>
 	</footer>
-</div>
 <% end %>

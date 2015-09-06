@@ -207,6 +207,7 @@ es:
     models: 
       user: Usuario
       diet: Dieta
+      history: Historial
     attributes:
       user:
         email: "Correo electrónico"
@@ -315,3 +316,9 @@ es:
         dinner_fruits: "Porciones de fruta en la cena"
         dinner_lacteals: "Porciones de lacteo en la cena"
         dinner_meats: "Porciones de carne en la cena"
+      history:
+        weight: "Peso"
+        fat: "Grasa"
+        waist: "Muñeca"
+        leg: "Pierna"
+        hip: "Hip"
