@@ -5,7 +5,8 @@ class HistoriesController < ApplicationController
   end
 
   def create
-    @history = current_user.histories.build(history_params)
+    @history = current_user.histories.new(history_params)
+    @history.date = Date.today
     @history.save
     redirect_to root_path
   end
@@ -17,7 +18,7 @@ class HistoriesController < ApplicationController
   private 
 
   def history_params
-  	params.permit(:weight, :waist, :hip, :leg, :fat)
+  	params.require(:history).permit(:weight, :waist, :hip, :leg, :fat)
   end
 
 end
