@@ -4,8 +4,14 @@ class HistoryController < ApplicationController
   end
 
   def create
-    @history = History.new([:weight, :waist, :hip, :leg, :fat])
-    @history.save()
-    redirect_to user_path(current_user)
+    @history = History.build(history_params)
+    @history.save
   end
+  
+  private 
+
+  def history_params
+  	params.permit(:weight, :waist, :hip, :leg, :fat)
+  end
+
 end
