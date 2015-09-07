@@ -15,70 +15,149 @@
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= devise_error_messages! %>
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name, :readonly => true%>
+  <div class = "row">
+    <div class="col-md-3">
+        <div class="form-group">
+          <%= f.label :name%>
+            <div class="input-group">
+            <%= f.text_field :name, :readonly => true , class: "form-control" %>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="form-group">
+          <%= f.label :last_name%>
+            <div class="input-group">
+            <%= f.text_field :last_name, :readonly => true , class: "form-control" %>
+            </div>
+        </div>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :last_name %><br />
-    <%= f.text_field :last_name, :readonly => true%>
-  </div> 
-  <div class="field">
-    <%= f.label :address %><br />
-    <%= f.text_field :address %>
+  <div class = "row">
+    <div class="col-md-3">
+        <div class="form-group">
+          <%= f.label :address%>
+            <div class="input-group">
+            <%= f.text_field :address, class: "form-control" %>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="form-group">
+          <%= f.label :city%>
+            <div class="input-group">
+            <%= f.text_field :city, class: "form-control" %>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class = "row">
+    <div class="col-md-3">
+        <div class="form-group">
+          <%= f.label :country%>
+            <div class="input-group">
+            <%= f.text_field :country, class: "form-control" %>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class = "row">
+    <div class="col-md-3">
+        <div class="form-group">
+          <%= f.label :phone%>
+            <div class="input-group">
+            <%= f.text_field :phone, class: "form-control" %>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="form-group">
+          <%= f.label :cellphone%>
+            <div class="input-group">
+            <%= f.text_field :cellphone, class: "form-control" %>
+            </div>
+        </div>
+    </div>
   </div>  
-  <div class="field">
-    <%= f.label :city %><br />
-    <%= f.text_field :city %>
-  </div>  
-  <div class="field">
-    <%= f.label :country %><br />
-    <%= f.text_field :country %>
-  </div>  
-   <div class="field">
-    <%= f.label :phone %><br />
-    <%= f.text_field :phone %>
-  </div> 
-   <div class="field">
-    <%= f.label :cellphone %><br />
-    <%= f.text_field :cellphone %>
-  </div> 
-  <div class="field">
-    <%= f.label :social_security %><br />
-    <%= f.select(:social_security, User::SOCIAL_SECURITY_TYPES, {}) %>
+  <div class = "row">
+    <div class="col-md-2">
+        <div class="form-group">
+          <%= f.label :social_security%>
+            <div class="input-group">
+            <%= f.select(:social_security, User::SOCIAL_SECURITY_TYPES, {}) %>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-1">
+        <div class="form-group">
+          <%= f.label :social_security_plan%>
+            <div class="input-group">
+            <%= f.select(:social_security_plan, User::SOCIAL_SECURITY_PLAN_TYPES, {}) %>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="form-group">
+          <%= f.label :social_security_number%>
+            <div class="input-group">
+            <%= f.text_field :social_security_number %>
+            </div>
+        </div>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :social_security_plan %><br />
-    <%= f.select(:social_security_plan, User::SOCIAL_SECURITY_PLAN_TYPES, {}) %>
+  <div class = "row">
+    <div class="col-md-6">
+        <div class="form-group">
+          <%= f.label :email%>
+            <div class="input-group">
+            <%= f.text_field :email, class: "form-control" %>
+            </div>
+        </div>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :social_security_number %><br />
-    <%= f.text_field :social_security_number %>
-  </div>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
-  </div>
-
   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
     <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :password %> <i>(Dejelo en blanco si no quiere cambiarlo)</i><br />
-    <%= f.password_field :password, autocomplete: "off" %>
+  <div class = "row">
+    <div class="col-md-6">
+        <div class="form-group">
+          <%= f.label :email%>
+            <div class="input-group">
+            <%= f.text_field :email, class: "form-control" %>
+            </div>
+        </div>
+    </div>
   </div>
-
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
+  <div class = "row">
+    <div class="col-md-6">
+        <div class="form-group">
+          <%= f.label :password %> <i>(Dejelo en blanco si no quiere cambiarlo)</i><br />
+            <div class="input-group">
+            <%= f.password_field :password, autocomplete: "off" %>
+            </div>
+        </div>
+    </div>
   </div>
-
-  <div class="field">
-    <%= f.label :current_password %> <i>(Ingrese su password acual para guardar los cambios)</i><br />
-    <%= f.password_field :current_password, autocomplete: "off" %>
+  <div class = "row">
+    <div class="col-md-6">
+        <div class="form-group">
+          <%= f.label :password_confirmation %>
+            <div class="input-group">
+            <%= f.password_field :password_confirmation, autocomplete: "off" %>
+            </div>
+        </div>
+    </div>
   </div>
-
+  <div class = "row">
+    <div class="col-md-6">
+        <div class="form-group">
+          <%= f.label :current_password %><i>(Ingrese su password acual para guardar los cambios)</i><br />
+            <div class="input-group">
+            <%= f.password_field :current_password, autocomplete: "off" %>
+            </div>
+        </div>
+    </div>
+  </div>
   <div class="actions">
     <%= f.submit "Acualizar" %>
   </div>
@@ -87,13 +166,9 @@
 
 <h3>Borrar Cuenta</h3>
 
-<p><%= button_to "Eliminar Cuenta", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
+<p><%= button_to "Eliminar Cuenta", registration_path(resource_name), data: { confirm: "Esta usted seguro? (no podra recuperar sus datos si cambia de opinion)" }, method: :delete %></p>
 
-<%= link_to "Volver", :back %>
-
-
-
-
+<p><%= button_to "Volver",:back %></p>
 
   <hr>
   <footer>
