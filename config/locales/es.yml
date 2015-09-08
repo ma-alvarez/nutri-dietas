@@ -322,3 +322,4 @@ es:
         waist: "Muñeca"
         leg: "Pierna"
         hip: "Cintura"
+        body_mass_index: "Indice de masa corporal"
