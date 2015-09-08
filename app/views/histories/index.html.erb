@@ -10,10 +10,64 @@
 </div>
 <div class="container theme-showcase" role="main">
 	<div class="page-header">
-        <h2>Estadisticas</h2>
+		<h2>Estadisticas</h2>
+	</div>
+	<h4>Estas son sus ultimas medidas cargadas:</h4>
+	<%= form_for @history, :html => { :class => "form-horizontal " } do |f| %>
+	<div class = "row">
+		<div class="col-md-2">
+			<div class="form-group">
+				<%= f.label :weight%>
+				<div class="input-group">
+					<%= f.text_field :weight, :readonly => true, class: "form-control" %>
+					<div class="input-group-addon">kg</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-1"></div>
+		<div class="col-md-2">
+			<div class="form-group">
+				<%= f.label :waist%>
+				<div class="input-group">
+					<%= f.text_field :waist, :readonly => true, class: "form-control" %>
+					<div class="input-group-addon">cm</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class = "row">
+		<div class="col-md-2">
+			<div class="form-group">
+				<%= f.label :hip%>
+				<div class="input-group">
+					<%= f.text_field :hip , :readonly => true, class: "form-control" %>
+					<div class="input-group-addon">cm</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-1"></div>
+		<div class="col-md-2">
+			<div class="form-group">
+				<%= f.label :leg%>
+				<div class="input-group">
+					<%= f.text_field :leg, :readonly => true, class: "form-control" %>
+					<div class="input-group-addon">cm</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class = "row">
+		<div class="col-md-3">
+			<div class="form-group">
+				<%= f.label :fat%>
+				<div class="input-group">
+					<%= f.text_field :fat, :readonly => true, class: "form-control" %>
+				</div>
+			</div>
+		</div>
 	</div>
 
-
+	<% end %>
 
 
 

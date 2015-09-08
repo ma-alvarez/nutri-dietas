@@ -2,6 +2,7 @@ class HistoriesController < ApplicationController
 	before_action :authenticate_user!
 
   def index
+     @history = current_user.histories.last()
   end
 
   def create
