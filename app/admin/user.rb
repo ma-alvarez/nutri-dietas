@@ -15,6 +15,155 @@ ActiveAdmin.register User do
     actions
   end
 
+  show do
+    attributes_table do
+      row :email
+      row :name
+      row :last_name
+      row :address 
+      row :city
+      row :country, as: :string
+      row :phone
+      row :cellphone 
+      row :social_security
+      row :social_security_plan
+      row :social_security_number
+      row :marital_status, as: :select
+      row :birhtday
+      row :profesion
+      row :sex
+      row :job_hs
+      row :job_type
+      row :weight_max
+      row :weight_min
+      row :weight_avg
+      row :weight_now
+      row :weight_exp
+      row :objective
+      row :family
+      row :cooks
+      row :buys
+      row :allergies
+      row :kosher
+      row :vegetarian
+      row :ovolacto
+      row :lacto
+      row :pork
+      row :meat
+      row :chicken
+      row :fish
+      row :celiac
+      row :swallowing
+      row :mastication
+      row :nausea
+      row :diarrhea
+      row :vomits
+      row :constipation
+      row :anemia
+      row :hypertension
+      row :diabetes
+      row :heart_problems
+      row :overweight
+      row :cholesterol
+      row :bulimia
+      row :anorexia
+      row :intestinal_diseases
+      row :cancer
+      row :cancer_type
+      row :illness_other
+      row :smoker
+      row :smoker_amount
+      row :medication
+      row :wrist_size
+      row :height
+      row :vitamins
+      row :sport1
+      row :sport1
+      row :sport2
+      row :sport2
+      row :sport3
+      row :sport3
+      row :menstruation
+      row :how_meet
+      row :comments
+    end
+
+    panel "Detalles de la Dieta" do
+      attributes_table_for user.diet do
+        row :fecal_incontinence
+        row :hemacromotosis
+        row :celiac
+        row :irritable_colon
+        row :pregnancy
+        row :ovolact
+        row :kosher
+        row :without_fibers
+        row :allowed_foods
+      end
+    end
+
+    panel "Desayuno" do
+      attributes_table_for user.diet do
+        row :breakfast_fruits
+        row :breakfast_lacteals
+        row :breakfast_starch
+     end
+    end
+
+    panel "Colación" do
+      attributes_table_for user.diet do
+        row :collation_fruits
+        row :collation_lacteals
+        row :collation_starch
+     end
+    end
+
+    panel "Almuerzo" do
+      attributes_table_for user.diet do
+        row :lunch_starch
+        row :lunch_vegetables
+        row :luch_fats
+        row :lunch_fruits
+        row :lunch_lacteals
+        row :lunch_meats
+     end
+    end
+
+    panel "Merienda" do
+      attributes_table_for user.diet do
+        row :merienda_fruits
+        row :merienda_lacteals
+        row :merienda_starch
+     end
+    end
+
+    panel "Cena" do
+      attributes_table_for user.diet do
+        row :dinner_starch
+        row :dinner_vegetables
+        row :dinner_fats
+        row :dinner_fruits
+        row :dinner_lacteals
+        row :dinner_meats
+     end
+    end
+
+    panel "Medidas" do
+      paginated_collection(user.histories.page(params[:page]).per(4), download_links: false) do
+        table_for(collection, sortable: false) do
+          column "Fecha", :date
+          column "Peso (kg)", :weight
+          column "Muñeca (cm)", :waist
+          column "Cintura (cm)", :hip
+          column "Pierna (cm)", :leg
+          column "Grasa", :fat
+          column "Índice de masa muscular", :body_mass_index
+        end
+      end
+    end
+
+  end
+
   filter :name
   filter :last_name
   filter :email

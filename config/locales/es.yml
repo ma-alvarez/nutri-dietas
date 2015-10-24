@@ -241,7 +241,7 @@ es:
         objective: "Objetivo"
         family: "¿Con quién vive?"
         cooks: "¿Quién cocina?"
-        allergies: "¿Cuales?"
+        allergies: "Alergias ... ¿Cuales?"
         kosher: "Kosher"
         vegetarian: "Vegetariano"
         ovolacto: "Ovolacto vegetariano"
