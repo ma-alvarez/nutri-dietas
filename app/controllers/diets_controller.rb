@@ -1,5 +1,5 @@
 class DietsController < ApplicationController
-  before_action :set_publication, only: [:show]
+  before_action :set_diet, only: [:show]
   before_action :authenticate_user!
 
   def show
@@ -35,7 +35,7 @@ class DietsController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_publication
+    def set_diet
       @diet = current_user.diet
     end
 
