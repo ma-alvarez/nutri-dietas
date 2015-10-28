@@ -24,7 +24,7 @@ ActiveAdmin.register User, as: "Medidas" do
           column "Cintura (cm)", :hip
           column "Pierna (cm)", :leg
           column "Grasa", :fat
-          column "Índice de masa muscular", :body_mass_index
+          column "Índice de masa corporal", :body_mass_index
         end
       end
     end
