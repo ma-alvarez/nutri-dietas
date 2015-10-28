@@ -153,10 +153,10 @@ ActiveAdmin.register User do
         table_for(collection, sortable: false) do
           column "Fecha", :date
           column "Peso (kg)", :weight
-          column "Muñeca (cm)", :waist
-          column "Cintura (cm)", :hip
+          column "Cintura (cm)", :waist
+          column "Cadera (cm)", :hip
           column "Pierna (cm)", :leg
-          column "Grasa", :fat
+          column "Grasa (%)", :fat
           column "Índice de masa corporal", :body_mass_index
         end
       end

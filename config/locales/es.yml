@@ -319,7 +319,7 @@ es:
       history:
         weight: "Peso"
         fat: "Grasa"
-        waist: "Muñeca"
+        waist: "Cintura"
         leg: "Pierna"
-        hip: "Cintura"
+        hip: "Cadera"
         body_mass_index: "Indice de masa corporal"
