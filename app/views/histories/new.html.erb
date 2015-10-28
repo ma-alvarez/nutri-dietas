@@ -14,21 +14,11 @@
         <h2>Cargar Medidas</h2>
     </div>
     <div class = "row">
-        <div class="col-md-2">
-          <div class="form-group">
-           <%= f.label :weight%>
-           <div class="input-group">
-           <%= f.text_field :weight, autofocus: true , class: "form-control" %>
-           <div class="input-group-addon">kg</div>
-       </div>
-       </div>
-   </div>
-   <div class="col-md-1"></div>
    <div class="col-md-2">
     <div class="form-group">
-       <%= f.label :waist%>
+       <%= f.label :leg%>
        <div class="input-group">
-       <%= f.text_field :waist, autofocus: true , class: "form-control" %>
+       <%= f.text_field :leg, autofocus: true , class: "form-control" %>
        <div class="input-group-addon">cm</div>
    </div>
    </div>
@@ -47,27 +37,17 @@
     <div class="col-md-1"></div>
     <div class="col-md-2">
         <div class="form-group">
-        	<%= f.label :leg%>
+        	<%= f.label :waist%>
             <div class="input-group">
-            <%= f.text_field :leg, autofocus: true , class: "form-control" %>
+            <%= f.text_field :waist, autofocus: true , class: "form-control" %>
             <div class="input-group-addon">cm</div>
         </div>
         </div>
     </div>
 </div>
 <div class = "row">
-<div class="col-md-3">
-    <div class="form-group">
-       <%= f.label :fat%>
-       <div class="input-group">
-       <%= f.text_field :fat, autofocus: true , class: "form-control" %>
-   </div>
-   </div>
-</div>
-</div>
-<div class = "row">
 <div class="col-md-1"></div>
-<div class="col-md-3">
+<div class="col-md-2">
 	<div class="form-group">
       <%= f.submit "Cargar", class: 'btn btn-lg btn-primary btn-block' %>
     </div>
