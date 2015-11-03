@@ -11,7 +11,6 @@ ActiveAdmin.register History do
 
   index do
     selectable_column
-    id_column
     column :date
     column :weight
     column :waist
