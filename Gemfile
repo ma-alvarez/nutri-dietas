@@ -33,6 +33,7 @@ gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootst
 gem "devise"
 gem 'activeadmin', github: 'activeadmin'
 gem 'bootstrap-datepicker-rails'
+gem 'gon'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

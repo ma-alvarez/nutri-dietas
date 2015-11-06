@@ -3,6 +3,7 @@ class HistoriesController < ApplicationController
 
   def index
      @history = current_user.histories.last()
+     gon.histories = current_user.histories
   end
 
   def create

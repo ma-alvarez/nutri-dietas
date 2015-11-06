@@ -173,6 +173,16 @@ function social_security() {
 		}
 
 }
+
+function histories_js(){
+	histories = [];
+	for (i = 0; i < gon.histories.length; i++) { 
+		var history = [new Date(gon.histories[i].date),parseFloat(gon.histories[i].weight)];
+		histories.push(history)
+	}
+	return histories
+}
+
 $(document).on("ready page:change", function() {
 	how_meet();
 	allergies();
@@ -194,5 +204,30 @@ $(document).on("ready page:change", function() {
 	$('#user_smoker').bind('change',function () {smoker();});
 	$('#registration_half_vegetarian').bind('change',function () {half_vegetarian();});
 	$('#user_social_security').bind('change',function () {social_security();});
+
+	google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn({ type: 'date', id: 'Fecha' });
+        data.addColumn({ type: 'number', id: 'Peso' });
+        data.addRows(histories_js());
+
+        var options = {
+          hAxis: {title:'Fecha'},
+          vAxis: {title:'Peso [kg]'},
+          chartArea: {width:'50%'},
+          legend: 'none',
+          trendlines: {
+            0: {
+              type: 'linear',
+              tooltip: true
+            }
+          }
+        };
+
+        var chartLinear = new google.visualization.ScatterChart(document.getElementById('chartLinear'));
+        chartLinear.draw(data, options);
+
+      }
 	
 });
