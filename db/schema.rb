@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150520184822) do
+ActiveRecord::Schema.define(version: 20151114230439) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -83,6 +83,35 @@ ActiveRecord::Schema.define(version: 20150520184822) do
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "menu"
+    t.boolean  "celiac_menu"
+    t.boolean  "infant_menu"
+    t.boolean  "ovolact_menu"
+    t.boolean  "gastrointestinal_menu"
+    t.boolean  "uric_acid_gout"
+    t.boolean  "gas_forming_foods"
+    t.boolean  "anemia"
+    t.boolean  "anticoagulantes"
+    t.boolean  "sports_drink"
+    t.boolean  "soft_mechanics"
+    t.boolean  "cholesterol"
+    t.boolean  "breakfast_snacks"
+    t.boolean  "diarrhea"
+    t.boolean  "diverticulosis"
+    t.boolean  "gastritis"
+    t.boolean  "hypertension"
+    t.boolean  "glycemic_index"
+    t.boolean  "osteoporosis"
+    t.boolean  "hyperproteic_first_second"
+    t.boolean  "hyperproteic_third"
+    t.boolean  "hyperproteic_fourth"
+    t.boolean  "fruits_vegetables"
+    t.boolean  "hc_reduced_plan"
+    t.boolean  "cow_proteins"
+    t.boolean  "reflux"
+    t.boolean  "renal"
+    t.boolean  "monohydrate_creatine_sup"
+    t.boolean  "vomiting"
   end
 
   create_table "histories", force: true do |t|
