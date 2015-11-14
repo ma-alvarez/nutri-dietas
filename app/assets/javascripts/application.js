@@ -118,14 +118,6 @@ function social_security() {
 			$("#user_social_security_plan").val('')
 			break;
 
-		case "OTRA":
-			$("#user_social_security_plan").children('option').hide();
-			$("#user_social_security_plan").children('option[value=""]').show();
-			$("#user_social_security_plan").val('')
-			$("#user_social_security_plan").prop("disabled", true);
-			$("#user_social_security_number").prop("disabled", true);
-			break;
-
 		case "SCIS":
 			$("#user_social_security_plan").children('option').hide();
 			$("#user_social_security_plan").children('option[value="50"]').show();
@@ -162,6 +154,14 @@ function social_security() {
 			$("#user_social_security_plan").children('option[value="400"]').show();
 			$("#user_social_security_plan").children('option[value=""]').show();
 			$("#user_social_security_plan").val('')
+			break;
+
+		case "OTRA":
+			$("#user_social_security_plan").children('option').hide();
+			$("#user_social_security_plan").children('option[value=""]').show();
+			$("#user_social_security_plan").val('')
+			$("#user_social_security_plan").prop("disabled", true);
+			$("#user_social_security_number").prop("disabled", true);
 			break;
 
 		default:
