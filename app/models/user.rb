@@ -34,5 +34,5 @@ class User < ActiveRecord::Base
   def max_weight_date
     self.histories.max_by(&:weight).date.strftime('%d/%m/%Y')
   end
-
+  
 end
