@@ -17,5 +17,22 @@ class User < ActiveRecord::Base
   has_one :diet
   has_many :histories
   accepts_nested_attributes_for :diet
+  accepts_nested_attributes_for :histories
+
+  def min_weight
+    (self.histories.minimum("weight")).round(2)
+  end
+
+  def max_weight
+    (self.histories.maximum("weight")).round(2)
+  end
+
+  def min_weight_date
+    self.histories.min_by(&:weight).date.strftime('%d/%m/%Y')
+  end
+
+  def max_weight_date
+    self.histories.max_by(&:weight).date.strftime('%d/%m/%Y')
+  end
 
 end

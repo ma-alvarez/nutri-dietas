@@ -3,6 +3,7 @@ class HistoriesController < ApplicationController
 
   def index
      @history = current_user.histories.last()
+     gon.histories = current_user.histories
   end
 
   def create
@@ -19,7 +20,7 @@ class HistoriesController < ApplicationController
   private 
 
   def history_params
-  	params.require(:history).permit(:weight, :waist, :hip, :leg, :fat)
+  	params.require(:history).permit(:weight, :waist, :hip, :leg, :fat, :user_id, :date)
   end
 
 end

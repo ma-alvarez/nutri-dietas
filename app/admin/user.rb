@@ -5,6 +5,12 @@ ActiveAdmin.register User do
     end
   end
 
+  sidebar "Editar/Agregar Medidas", only: [:show, :edit] do
+    ul do
+      li link_to "Medidas", admin_user_histories_path(user)
+    end
+  end
+
   index do
     selectable_column
     id_column
