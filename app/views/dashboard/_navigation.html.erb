@@ -12,15 +12,15 @@
     <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
         <li <% if current_page?(root_path) %>class="active"
-<% end %> ><%= link_to 'Inicio', root_path, class:"navbar-brand" %></li>
+<% end %> ><%= link_to ' Inicio ', root_path, class:"navbar-brand" %></li>
         <li <% if current_page?(current_user.diet) %>class="active"
-<% end %> ><%= link_to 'Dieta', current_user.diet, class:"navbar-brand" %></li>
+<% end %> ><%= link_to ' Dieta ', current_user.diet, class:"navbar-brand" %></li>
         <li <% if current_page?(new_history_path) %>class="active"
-<% end %> ><%= link_to 'Medidas', new_history_path, class:"navbar-brand" %>
+<% end %> ><%= link_to ' Medidas ', new_history_path, class:"navbar-brand" %>
         <li <% if current_page?(histories_path) %>class="active"
-<% end %> ><%= link_to 'Estadisticas', histories_path, class:"navbar-brand" %>
+<% end %> ><%= link_to ' Estadisticas ', histories_path, class:"navbar-brand" %>
         <li <% if current_page?(static_pages_help_path) %>class="active"
-<% end %> ><%= link_to 'Ayuda', static_pages_help_path, class:"navbar-brand" %></li>
+<% end %> ><%= link_to ' Ayuda ', static_pages_help_path, class:"navbar-brand" %></li>
         <li class="dropdown">
           <a href="#" class="navbar-brand" data-toggle="dropdown" role="button" aria-expanded="false"><%=current_user.name %><span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
