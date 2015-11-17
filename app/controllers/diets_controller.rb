@@ -1,36 +1,35 @@
 class DietsController < ApplicationController
   before_action :set_diet, only: [:show]
   before_action :authenticate_user!
-
+  
   def show
-  	@diets_set = [];
-  	if (current_user.diet.fecal_incontinence ) 
-  		@diets_set.push("fecal_incontinence");
-  	end
-  	if (current_user.diet.hemacromotosis)
-  		@diets_set.push("hemacromotosis");
-  	end
-  	if (current_user.diet.celiac)
-  		@diets_set.push("celiac");
-  	end
-  	if (current_user.diet.irritable_colon)
-  		@diets_set.push("irritable_colon");
-  	end
-  	if (current_user.diet.pregnancy) 
-  		@diets_set.push("pregnancy");
-  	end
-  	if (current_user.diet.ovolact) 
-  		@diets_set.push("ovolact");
-  	end
-  	if (current_user.diet.kosher) 
-  		@diets_set.push("kosher");
-  	end
-  	if (current_user.diet.without_fibers) 
-  		@diets_set.push("without_fibers");
-  	end
-  	if (current_user.diet.allowed_foods) 
-  		@diets_set.push("allowed_foods");
-  	end
+    @diets = ["celiac","irritable_colon","pregnancy","ovolact", "kosher"]
+    @menus = ["without_fibers","menu","celiac_menu","infant_menu", "ovolact_menu", "gastrointestinal_menu"]
+    @coplements = ["fecal_incontinence","hemacromotosis","allowed_foods","uric_acid_gout",
+                   "gas_forming_foods", "anemia", "anticoagulantes", "sports_drink",
+                   "soft_mechanics","cholesterol","breakfast_snacks","diarrhea","diverticulosis",
+                   "gastritis","hypertension","glycemic_index","osteoporosis","hyperproteic_first_second",
+                   "hyperproteic_third","hyperproteic_fourth","fruits_vegetables","hc_reduced_plan",
+                   "cow_proteins","reflux","renal","monohydrate_creatine_sup","vomiting"]
+    @diets_set = [];
+    @menus_set = [];
+    @complements_set = [];
+    for i in @diets
+      if (current_user.diet.send(i))
+        @diets_set.push(i)
+      end
+    end
+    for i in @menus
+      if (current_user.diet.send(i))
+        @menus_set.push(i)
+      end
+    end
+    for i in @coplements
+      if (current_user.diet.send(i))
+        @complements_set.push(i)
+      end
+    end
+    @chekDiets
   end
 
   private
@@ -39,4 +38,9 @@ class DietsController < ApplicationController
       @diet = current_user.diet
     end
 
+    def checkDiets
+      if (@diets_set.empty?)
+        @diets_set.push("default")
+      end
+    end
 end
