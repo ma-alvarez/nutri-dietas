@@ -15,7 +15,7 @@
 	<div class="row">
 		<% @diets_set.each do |d|%>
 		<div class="col-xs-6 col-md-2">
-			<%= link_to(image_tag('Iconos/'+d+'.jpg', size: "150x100"),'/assets/dietas/Dietas/'+d+'.pdf') %>
+			<%= link_to(image_tag('Iconos/'+d+'.jpg', size: "150x100"),'/dietas/Dietas/'+d+'.pdf') %>
 		</div>
 		<%=  %>
 		<% end %>
@@ -27,7 +27,7 @@
 	<div class="row">
 		<% @complements_set.each do |d|%>
 		<div class="col-xs-6 col-md-2">
-			<%= link_to(image_tag('Iconos/'+d+'.jpg', size: "150x100"),'/assets/dietas/Complementos/'+d+'.pdf') %>
+			<%= link_to(image_tag('Iconos/'+d+'.jpg', size: "150x100"),'/dietas/Complementos/'+d+'.pdf') %>
 		</div>
 		<%=  %>
 		<% end %>
@@ -37,10 +37,10 @@
 	<div class="page-header">
         <h3>Menus disponibles</h3>
 	</div>
-	<div class="row">
+	<div class="row">	
 		<% @menus_set.each do |d|%>
 		<div class="col-xs-6 col-md-2">
-			<%= link_to(image_tag('Iconos/'+d+'.jpg', size: "150x100"),'/assets/dietas/Menus/'+d+'.pdf') %>
+			<%= link_to(image_tag('Iconos/'+d+'.jpg', size: "150x100"),'/dietas/Menus/'+d+'.pdf') %>
 		</div>
 		<%=  %>
 		<% end %>
