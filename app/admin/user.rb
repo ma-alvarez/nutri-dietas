@@ -94,17 +94,56 @@ ActiveAdmin.register User do
       row :comments
     end
 
-    panel "Detalles de la Dieta" do
+    panel "Dietas" do
       attributes_table_for user.diet do
-        row :fecal_incontinence
-        row :hemacromotosis
         row :celiac
         row :irritable_colon
         row :pregnancy
         row :ovolact
         row :kosher
-        row :without_fibers
+      end
+    end
+
+    panel "Complementos a la Dieta" do
+      attributes_table_for user.diet do
+        row :fecal_incontinence
+        row :hemacromotosis
         row :allowed_foods
+        row :uric_acid_gout
+        row :gas_forming_foods
+        row :anemia
+        row :anticoagulantes
+        row :sports_drink
+        row :soft_mechanics
+        row :cholesterol
+        row :breakfast_snacks
+        row :diarrhea
+        row :diverticulosis
+        row :gastritis
+        row :hypertension
+        row :glycemic_index
+        row :osteoporosis
+        row :hyperproteic_first_second
+        row :hyperproteic_third
+        row :hyperproteic_fourth
+        row :fruits_vegetables
+        row :hc_reduced_plan
+        row :cow_proteins
+        row :reflux
+        row :renal
+        row :monohydrate_creatine_sup
+        row :vomiting
+      end
+    end
+
+    panel "Menus" do
+      attributes_table_for user.diet do
+        row :without_fibers
+        row :menu
+        row :celiac_menu
+        row :infant_menu
+        row :ovolact_menu
+        row :gastrointestinal_menu
       end
     end
 
@@ -254,37 +293,82 @@ ActiveAdmin.register User do
       end
     end
 
-    f.inputs "Detalles de la Dieta", for: [:diet, f.object.diet || f.object.build_diet] do |d|
-      d.input :fecal_incontinence
-      d.input :hemacromotosis
-      d.input :celiac
-      d.input :irritable_colon
-      d.input :pregnancy
-      d.input :ovolact
-      d.input :kosher
-      d.input :without_fibers
-      d.input :allowed_foods
+    f.inputs "", for: [:diet, f.object.diet || f.object.build_diet] do |d|
+      f.inputs "Dietas" do
+        d.input :celiac
+        d.input :irritable_colon
+        d.input :pregnancy
+        d.input :ovolact
+        d.input :kosher
+      end
+       f.inputs "Complementos a la Dieta" do
+        d.input :fecal_incontinence
+        d.input :hemacromotosis
+        d.input :allowed_foods
+        d.input :uric_acid_gout
+        d.input :gas_forming_foods
+        d.input :anemia
+        d.input :anticoagulantes
+        d.input :sports_drink
+        d.input :soft_mechanics
+        d.input :cholesterol
+        d.input :breakfast_snacks
+        d.input :diarrhea
+        d.input :diverticulosis
+        d.input :gastritis
+        d.input :hypertension
+        d.input :glycemic_index
+        d.input :osteoporosis
+        d.input :hyperproteic_first_second
+        d.input :hyperproteic_third
+        d.input :hyperproteic_fourth
+        d.input :fruits_vegetables
+        d.input :hc_reduced_plan
+        d.input :cow_proteins
+        d.input :reflux
+        d.input :renal
+        d.input :monohydrate_creatine_sup
+        d.input :vomiting
+      end
+      f.inputs "Menus" do
+        d.input :without_fibers
+        d.input :menu
+        d.input :celiac_menu
+        d.input :infant_menu
+        d.input :ovolact_menu
+        d.input :gastrointestinal_menu
+      end
+      f.inputs "Desayuno" do
       d.input :breakfast_fruits
       d.input :breakfast_lacteals
       d.input :breakfast_starch
+      end
+      f.inputs "Colación" do
       d.input :collation_fruits
       d.input :collation_lacteals
       d.input :collation_starch
+      end
+      f.inputs "Almuerzo" do
       d.input :lunch_starch
       d.input :lunch_vegetables
       d.input :luch_fats
       d.input :lunch_fruits
       d.input :lunch_lacteals
       d.input :lunch_meats
+      end
+      f.inputs "Merienda" do
       d.input :merienda_fruits
       d.input :merienda_lacteals
       d.input :merienda_starch
+      end
+      f.inputs "Cena" do
       d.input :dinner_starch
       d.input :dinner_vegetables
       d.input :dinner_fats
       d.input :dinner_fruits
       d.input :dinner_lacteals
       d.input :dinner_meats
+      end
     end
 
     f.actions

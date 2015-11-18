@@ -29,7 +29,7 @@ class DietsController < ApplicationController
         @complements_set.push(i)
       end
     end
-    @chekDiets
+    check_diets
   end
 
   private
@@ -38,7 +38,7 @@ class DietsController < ApplicationController
       @diet = current_user.diet
     end
 
-    def checkDiets
+    def check_diets
       if (@diets_set.empty?)
         @diets_set.push("default")
       end
