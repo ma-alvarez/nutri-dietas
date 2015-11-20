@@ -13,6 +13,12 @@
 	<div class="page-header">
         <h2>Cargar Medidas</h2>
     </div>
+    <% if (!@open) %>
+    <div class="alert alert-danger" role="alert">
+        <strong>Atencion!</strong> Usted no tiene medidas para cargar.
+      </div>
+      
+    <% else %>
     <div class = "row">
    <div class="col-md-2">
     <div class="form-group">
@@ -55,4 +61,6 @@
 </div>
 	<hr>
 	<%= render :partial => 'dashboard/footer' %>
+  <%=  %> 
+<% end %>
 <% end %>
