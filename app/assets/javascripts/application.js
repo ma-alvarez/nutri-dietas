@@ -229,5 +229,28 @@ $(document).on("ready page:change", function() {
         chartLinear.draw(data, options);
 
       }
+
+google.setOnLoadCallback(drawBasic);
+
+function drawBasic() {
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', '');
+      data.addColumn('number', 'Peso [kg]');
+
+      data.addRows([
+        ['Peso actual', parseFloat(gon.last_weight)],
+        ['Peso objetivo', parseFloat(gon.weight_exp)],
+      ]);
+
+      var options = {
+        title: 'Peso actual vs Peso objetivo',
+      };
+
+      var chart = new google.visualization.ColumnChart(
+        document.getElementById('chart_div'));
+
+      chart.draw(data, options);
+    }
 	
 });

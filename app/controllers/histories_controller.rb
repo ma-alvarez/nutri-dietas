@@ -2,8 +2,10 @@ class HistoriesController < ApplicationController
 	before_action :authenticate_user!
 
   def index
-     @history = current_user.histories.last()
+     @history = current_user.histories.last
      gon.histories = current_user.histories
+     gon.last_weight = current_user.histories.last.weight
+     gon.weight_exp = current_user.weight_exp
   end
 
   def create
