@@ -9,14 +9,13 @@ class HistoriesController < ApplicationController
   end
 
   def create
-    @history = current_user.histories.new(history_params)
-    @history.date = Date.today
-    @history.save
+    @history = current_user.histories.last
+    current_user.histories.last.update(history_params)
     redirect_to root_path
   end
 
   def new
-    @open = is_open
+    @open = open?
   	@history = current_user.histories.new
   end
 
@@ -25,10 +24,16 @@ class HistoriesController < ApplicationController
   private 
 
   def history_params
-  	params.require(:history).permit(:weight, :waist, :hip, :leg, :fat, :user_id, :date)
+  	params.require(:history).permit(:waist, :hip, :leg,:user_id, :date)
   end
   #Check for open record
-  def is_open
-      return false
+  def open?
+      return (current_user.histories.last && current_user.histories.last.weight && !complete?)
   end
+
+  def complete?
+    history = current_user.histories.last
+    return history.weight && history.waist && history.hip && history.leg
+  end
+
 end
