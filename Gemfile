@@ -34,6 +34,7 @@ gem "devise"
 gem 'activeadmin', github: 'activeadmin'
 gem 'bootstrap-datepicker-rails'
 gem 'gon'
+gem 'seed_dump'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
