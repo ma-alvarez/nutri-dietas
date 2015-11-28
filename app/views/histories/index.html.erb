@@ -14,11 +14,18 @@
 	<div class="page-header">
 		<h2>Estadisticas</h2>
 	</div>
+	<h4>Peso en el tiempo:</h4>
+	<div id="chartLinear" style="height: 350px; width: 900px"></div>
+	<h4>Peso actual vs peso objetivo:</h4>
+	<div id="chart_div" style="height: 350px; width: 900px"></div>
+	<div class="page-header">
+		<h2>Medidas</h2>
+	</div>
 	<h4>Estas son sus ultimas medidas cargadas:</h4>
-	<%= form_for @history, :html => { :class => "form-horizontal " } do |f| %>
 	<div class = "row">
 		<div class="col-md-2">
 			<div class="form-group">
+				<%= form_for @history, :html => { :class => "form-horizontal " } do |f| %>
 				<%= f.label :weight%>
 				<div class="input-group">
 					<%= f.text_field :weight, :readonly => true, class: "form-control" %>
@@ -80,10 +87,6 @@
 		</div>
 	</div>
 	<% end %>
-
-	<div id="chartLinear" style="height: 350px; width: 800px"></div>
-	<div id="chart_div" style="width: 400px; height: 500px;"></div>
-
 	<hr>
 	<%= render :partial => 'dashboard/footer' %>
-	</div>
+</div>

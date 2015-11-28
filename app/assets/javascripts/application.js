@@ -244,7 +244,7 @@ function drawBasic() {
       ]);
 
       var options = {
-        title: 'Peso actual vs Peso objetivo',
+        chartArea: {width:'50%'},
       };
 
       var chart = new google.visualization.ColumnChart(
