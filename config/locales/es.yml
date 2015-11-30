@@ -353,3 +353,5 @@ es:
         hip: "Cadera"
         body_mass_index: "Indice de masa corporal"
         date: "Fecha"
+        risk: "Riesgo de padecer enfermedades crónicas"
+        fats_value: "Grasa bruta"

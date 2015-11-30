@@ -14,9 +14,9 @@
 	<div class="page-header">
 		<h2>Estadisticas</h2>
 	</div>
-	<h4>Peso en el tiempo:</h4>
+	<h4>Peso en función del tiempo</h4>
 	<div id="chartLinear" style="height: 350px; width: 900px"></div>
-	<h4>Peso actual vs peso objetivo:</h4>
+	<h4>Peso actual vs Peso objetivo:</h4>
 	<div id="chart_div" style="height: 350px; width: 900px"></div>
 	<div class="page-header">
 		<h2>Medidas</h2>
@@ -40,6 +40,23 @@
 				<div class="input-group">
 					<%= f.text_field :waist, :readonly => true, class: "form-control" %>
 					<div class="input-group-addon">cm</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-1"></div>
+		<div class="col-md-2">
+			<div class="form-group">
+				<%= f.label :risk%>
+				<div class="input-group">
+					<%- if @history.risk == 'Bajo' %>
+                        <h4><span class="label label-success"><%=@history.risk%></span></h4>
+                    <% end -%>
+                    <%- if @history.risk == 'Medio' %>
+                        <h4><span class="label label-warning"><%=@history.risk%></span></h4>
+                    <% end -%>
+                    <%- if @history.risk == 'Alto' %>
+                        <h4><span class="label label-danger"><%=@history.risk%></span></h4>
+                    <% end -%>
 				</div>
 			</div>
 		</div>
@@ -72,6 +89,16 @@
 				<div class="input-group">
 					<%= f.text_field :fat , :readonly => true, class: "form-control" %>
 					<div class="input-group-addon">%</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-1"></div>
+		<div class="col-md-2">
+			<div class="form-group">
+				<%= f.label :fats_value%>
+				<div class="input-group">
+					<%= f.text_field :fats_value, :readonly => true, class: "form-control" %>
+					<div class="input-group-addon">kg</div>
 				</div>
 			</div>
 		</div>
