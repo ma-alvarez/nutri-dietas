@@ -239,6 +239,7 @@ function drawBasic() {
       data.addColumn('number', 'Peso [kg]');
 
       data.addRows([
+        ['Peso inicial', parseFloat(gon.first_weight)],
         ['Peso actual', parseFloat(gon.last_weight)],
         ['Peso objetivo', parseFloat(gon.weight_exp)],
       ]);

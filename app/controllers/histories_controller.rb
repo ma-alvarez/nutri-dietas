@@ -6,6 +6,7 @@ class HistoriesController < ApplicationController
      gon.histories = current_user.histories
      gon.last_weight = current_user.histories.last.weight
      gon.weight_exp = current_user.weight_exp
+     gon.first_weight = current_user.histories.first.weight
   end
 
   def create
