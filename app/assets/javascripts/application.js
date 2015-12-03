@@ -191,6 +191,9 @@ $(document).on("ready page:change", function() {
 	half_vegetarian();
 	menstruation();
 	social_security();
+	$(function () {
+  		$('[data-toggle="tooltip"]').tooltip()
+	})
 	$('.datepicker').datepicker({
     	format: "dd/mm/yyyy",
     	startView: 2,

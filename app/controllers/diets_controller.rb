@@ -11,6 +11,18 @@ class DietsController < ApplicationController
                    "gastritis","hypertension","glycemic_index","osteoporosis","hyperproteic_first_second",
                    "hyperproteic_third","hyperproteic_fourth","fruits_vegetables","hc_reduced_plan",
                    "cow_proteins","reflux","renal","monohydrate_creatine_sup","vomiting"]
+    @translate = {"celiac"=>"Celiaco","irritable_colon"=>"Colon Irritable","pregnancy"=>"Embarazo","ovolact"=>"Ovolacto",
+            "kosher"=>"Kosher","without_fibers"=>"Menu sin fibras","menu"=>"Menu","celiac_menu"=>"Menu celiacos",
+            "infant_menu"=>"Menu infantil", "ovolact_menu"=>"Menu Ovolacto", "gastrointestinal_menu"=>"Menu gastrointestinal",
+            "fecal_incontinence"=>"Inconsistencia fecal","hemacromotosis"=>"Hemacromotosis","allowed_foods"=>"Permitidos",
+            "uric_acid_gout"=>"Acido urico y gota","gas_forming_foods"=>"Formadores de gas","anemia"=>"Anemia",
+            "anticoagulantes"=>"Anticoagulantes", "sports_drink"=>"Bebida deportiva","soft_mechanics"=>"Blando mecanica",
+            "cholesterol"=>"Colesterol","breakfast_snacks"=>"Desayuno & Snaks","diarrhea"=>"Diarrea","default"=>"Dieta",
+            "diverticulosis"=>"Diverticulosis","gastritis"=>"Gastritis","hypertension"=>"Hipertension",
+            "glycemic_index"=>"Indice glucemico","osteoporosis"=>"Osteoporosis","hyperproteic_first_second"=>"Hiper proteico 1-2",
+            "hyperproteic_third"=>"Hiperproteico 3","hyperproteic_fourth"=>"Hiperproteico 4","fruits_vegetables"=>"Frutas y vegetales",
+            "hc_reduced_plan"=>"Plan reducido en HC","cow_proteins"=>"Proteinas de Vaca","reflux"=>"Reflujo",
+            "renal"=>"Renal","monohydrate_creatine_sup"=>"Suplementos (Monohidratos&Creatina)","vomiting"=>"Vomitos"}
     @diets_set = [];
     @menus_set = [];
     @complements_set = [];
