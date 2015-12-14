@@ -46,7 +46,9 @@
 		<div class="col-md-1"></div>
 		<div class="col-md-2">
 			<div class="form-group">
-				<%= f.label :risk%>
+				<%-if @history.risk%>
+					<%= f.label :risk%>
+				<%-end%>
 				<div class="input-group">
 					<%- if @history.risk == 'Bajo' %>
                         <h4><span class="label label-success"><%=@history.risk%></span></h4>

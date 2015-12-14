@@ -34,7 +34,7 @@ class HistoriesController < ApplicationController
 
   def complete?
     history = current_user.histories.last
-    return history.weight && history.waist && history.hip && history.leg
+    return history.complete?
   end
 
 end
