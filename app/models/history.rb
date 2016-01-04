@@ -6,6 +6,23 @@ class History < ActiveRecord::Base
     	index.round(2)
 	end
 
+	def body_mass_label
+		if self.complete?
+				if self.body_mass_index < 18.5
+					return "Bajo Peso"
+				end
+				if self.body_mass_index >= 18.5 && self.waist < 25
+					return "Normal"
+				end
+				if self.body_mass_index >= 25 && self.waist < 30
+					return "Sobrepeso"
+				end
+				if self.body_mass_index >= 30
+					return "Obesidad"
+				end
+		end
+	end
+
 	def risk
 		if self.complete?
 			if self.user.sex == 'M'
