@@ -208,6 +208,8 @@ es:
       user: Usuario
       diet: Dieta
       history: Historial
+      social_security: Obra Social
+      plan: Plan
     attributes:
       user:
         email: "Correo electrónico"
@@ -355,3 +357,7 @@ es:
         date: "Fecha"
         risk: "Riesgo de padecer enfermedades crónicas"
         fats_value: "Grasa bruta"
+      plan:
+        name: "Nombre"
+      social_security:
+        name: "Nombre"
