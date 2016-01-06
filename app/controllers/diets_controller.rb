@@ -3,16 +3,17 @@ class DietsController < ApplicationController
   before_action :authenticate_user!
   
   def show
-    @diets = ["celiac","irritable_colon","pregnancy","ovolact", "kosher"]
+    @diets = ["celiac","irritable_colon","pregnancy","ovolact", "kosher","weight_up","hepatic","osteoarthritis"]
     @menus = ["without_fibers","menu","celiac_menu","infant_menu", "ovolact_menu", "gastrointestinal_menu"]
     @coplements = ["fecal_incontinence","hemacromotosis","allowed_foods","uric_acid_gout",
                    "gas_forming_foods", "anemia", "anticoagulantes", "sports_drink",
                    "soft_mechanics","cholesterol","breakfast_snacks","diarrhea","diverticulosis",
                    "gastritis","hypertension","glycemic_index","osteoporosis","hyperproteic_first_second",
                    "hyperproteic_third","hyperproteic_fourth","fruits_vegetables","hc_reduced_plan",
-                   "cow_proteins","reflux","renal","monohydrate_creatine_sup","vomiting"]
+                   "cow_proteins","reflux","renal","monohydrate_creatine_sup","vomiting","easter","christmas"]
     @translate = {"celiac"=>"Celiaco","irritable_colon"=>"Colon Irritable","pregnancy"=>"Embarazo","ovolact"=>"Ovolacto",
-            "kosher"=>"Kosher","without_fibers"=>"Menu sin fibras","menu"=>"Menu","celiac_menu"=>"Menu celiacos",
+            "kosher"=>"Kosher","weight_up"=>"Subir de peso","hepatic"=>"Hepatica","osteoarthritis"=>"Artrosis",
+            "without_fibers"=>"Menu sin fibras","menu"=>"Menu","celiac_menu"=>"Menu celiacos","easter"=>"Pascua","christmas"=>"Navidad",
             "infant_menu"=>"Menu infantil", "ovolact_menu"=>"Menu Ovolacto", "gastrointestinal_menu"=>"Menu gastrointestinal",
             "fecal_incontinence"=>"Inconsistencia fecal","hemacromotosis"=>"Hemacromotosis","allowed_foods"=>"Permitidos",
             "uric_acid_gout"=>"Acido urico y gota","gas_forming_foods"=>"Formadores de gas","anemia"=>"Anemia",

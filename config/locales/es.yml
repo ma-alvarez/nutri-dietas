@@ -347,6 +347,12 @@ es:
         renal: "Renal"
         monohydrate_creatine_sup: "Suplementación con monohidrato de creatina"
         vomiting: "Vómitos"
+        weight_up: "Subir de peso"
+        hepatic: "Hepato protectora"
+        osteoarthritis: "Artrosis"
+        easter: "Pascua"
+        christmas: "Navidad"
+
       history:
         weight: "Peso"
         fat: "Grasa"

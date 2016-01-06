@@ -101,6 +101,9 @@ ActiveAdmin.register User do
         row :pregnancy
         row :ovolact
         row :kosher
+        row :weight_up
+        row :hepatic
+        row :osteoarthritis
       end
     end
 
@@ -133,6 +136,8 @@ ActiveAdmin.register User do
         row :renal
         row :monohydrate_creatine_sup
         row :vomiting
+        row :easter
+        row :christmas
       end
     end
 
@@ -300,6 +305,8 @@ ActiveAdmin.register User do
         d.input :pregnancy
         d.input :ovolact
         d.input :kosher
+        d.input :hepatic
+        d.input :osteoarthritis
       end
        f.inputs "Complementos a la Dieta" do
         d.input :fecal_incontinence
@@ -329,6 +336,8 @@ ActiveAdmin.register User do
         d.input :renal
         d.input :monohydrate_creatine_sup
         d.input :vomiting
+        d.input :easter
+        d.input :christmas
       end
       f.inputs "Menus" do
         d.input :without_fibers
