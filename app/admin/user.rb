@@ -305,6 +305,7 @@ ActiveAdmin.register User do
         d.input :pregnancy
         d.input :ovolact
         d.input :kosher
+        d.input :weight_up
         d.input :hepatic
         d.input :osteoarthritis
       end
