@@ -1,0 +1,1204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Informaci&oacute;n de Paciente</title>
+<style type="text/css">
+<!--
+.Estilo1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+.borde{
+	border: 1px solid #000000;
+}
+.Estilo2 {border: 1px solid #000000; font-weight: bold; }
+.blanco{
+	color:#FFFFFF;
+}
+.Estilo3 {border: 1px solid #000000; color: #FFFFCC; }
+-->
+</style>
+</head>
+
+<body>
+<table width="1267" border="0" cellspacing="0" cellpadding="2">
+  <tr>
+    <td width="16" class="blanco">A</td>
+    <td width="165" class="blanco">B</td>
+    <td width="193" class="blanco">C</td>
+    <td width="125" class="blanco">D</td>
+    <td width="171" class="blanco">E</td>
+    <td width="124" class="blanco">F</td>
+    <td width="119" class="blanco">G</td>
+    <td width="107" class="blanco">H</td>
+    <td width="108" class="blanco">I</td>
+    <td width="99" class="blanco">J</td>
+  </tr>
+  <tr>
+    <td class="blanco">2</td>
+    <td>09/12/2015</td>
+    <td colspan="8"> <span class="Estilo1">Prof. Lic. Mar&iacute;a de las Mercedes Gabin de    Sardoy</span></td>
+  </tr>
+  <tr>
+    <td class="blanco">3</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">4</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">5</td>
+    <td>&nbsp;</td>
+    <td align="left" bgcolor="#FFFF99" class="borde"><strong>NOMBRE :    </strong></td>
+    <td colspan="3" align="left" bgcolor="#FFFF99" class="borde">Malena di gloria</td>
+    <td bgcolor="#FFFF99" class="borde"><strong>ALIMENTACI&Oacute;N ESPECIAL:    </strong></td>
+    <td colspan="3" bgcolor="#FFFF99" class="borde"></td>
+  </tr>
+  <tr>
+    <td class="blanco">6</td>
+    <td>&nbsp;</td>
+    <td align="left" bgcolor="#FFFF99" class="borde"><strong>TALLA :</strong></td>
+    <td colspan="3" align="left" bgcolor="#FFFF99" class="borde">1,00</td>
+    <td bgcolor="#FFFF99" class="borde"><strong>COMENTARIOS:</strong></td>
+    <td colspan="3" bgcolor="#FFFF99" class="borde"></td>
+  </tr>
+  <tr>
+    <td class="blanco">7</td>
+    <td>&nbsp;</td>
+    <td align="left" bgcolor="#FFFF99" class="borde"><strong>SEXO :</strong></td>
+    <td colspan="3" align="left" bgcolor="#FFFF99" class="borde">F</td>
+    <td bgcolor="#FFFF99" class="borde"><strong>RECOMENDAC:</strong></td>
+    <td colspan="3" bgcolor="#FFFF99" class="borde">Otro paciente/profesional de la salud: marcela caretti </td>
+  </tr>
+  <tr>
+    <td class="blanco">8</td>
+    <td>&nbsp;</td>
+    <td align="left" bgcolor="#FFFF99" class="borde"><strong> PESO ACTUAL :</strong></td>
+    <td colspan="3" align="left" bgcolor="#FFFF99" class="borde">52,000</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">9</td>
+    <td>&nbsp;</td>
+    <td align="left" bgcolor="#FFFF99" class="borde"><strong> EDAD :</strong></td>
+    <td colspan="3" align="left" bgcolor="#FFFF99" class="borde">24</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">10</td>
+    <td>&nbsp;</td>
+    <td align="left" bgcolor="#FFFF99" class="Estilo2">PESO USUAL: </td>
+    <td colspan="3" align="left" bgcolor="#FFFF99" class="borde">52,000</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">11</td>
+    <td>&nbsp;</td>
+    <td align="left" bgcolor="#FFFF99" class="borde"><strong>CIRCUNFER.    MU&Ntilde;ECA :</strong></td>
+    <td colspan="3" align="left" bgcolor="#FFFF99" class="borde">9,00</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">12</td>
+    <td>&nbsp;</td>
+    <td align="left" bgcolor="#FFFF99" class="borde"><strong>FECHA    DE NACIMIENTO</strong></td>
+    <td colspan="3" align="left" bgcolor="#FFFF99" class="borde">14/09/1991</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">13</td>
+    <td>&nbsp;</td>
+    <td align="left" bgcolor="#FFFF99" class="borde"><strong> OCUPACION:</strong></td>
+    <td colspan="3" align="left" bgcolor="#FFFF99" class="borde">estudiante </td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">14</td>
+    <td>&nbsp;</td>
+    <td align="left" bgcolor="#FFFF99" class="borde"><strong> FUMA:</strong></td>
+    <td colspan="3" align="left" bgcolor="#FFFF99" class="borde">NO</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">15</td>
+    <td>&nbsp;</td>
+    <td align="left" bgcolor="#FFFF99" class="borde"><strong>PATOLOGIAS:</strong></td>
+    <td colspan="3" align="left" bgcolor="#FFFF99" class="borde">Prob. anemia</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">16</td>
+    <td>&nbsp;</td>
+    <td align="left" bgcolor="#FFFF99" class="borde"><strong> MEDICACION:</strong></td>
+    <td colspan="3" align="left" bgcolor="#FFFF99" class="borde">just  no  </td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">17</td>
+    <td>&nbsp;</td>
+    <td align="left" bgcolor="#FFFF99" class="borde"><strong>ACTIVIDAD FISICA:</strong></td>
+    <td colspan="3" align="left" bgcolor="#FFFF99" class="borde"></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">18</td>
+    <td>&nbsp;</td>
+    <td align="left" bgcolor="#FFFF99" class="borde"><strong>PESO AL QUE QUIERE LLEGAR:</strong></td>
+    <td colspan="3" align="left" bgcolor="#FFFF99" class="borde">52,000</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">19</td>
+    <td>&nbsp;</td>
+    <td align="left" bgcolor="#FFFF99" class="borde"><strong> PESO DE ALTA:</strong></td>
+    <td colspan="3" align="left" bgcolor="#FFFF99" class="borde">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">20</td>
+    <td>&nbsp;</td>
+    <td align="left" bgcolor="#FFFF99" class="borde"><strong>OBRA SOCIAL N&ordm;:</strong></td>
+    <td colspan="3" align="left" bgcolor="#FFFF99" class="borde">OSDE - PLAN:410 - NRO:62198474301</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">21</td>
+    <td>&nbsp;</td>
+    <td align="left" bgcolor="#FFFF99" class="borde"><strong>OBJETIVO:</strong></td>
+    <td colspan="3" align="left" bgcolor="#FFFF99" class="borde">Comer mas saludable </td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">22</td>
+    <td>&nbsp;</td>
+    <td align="left" bgcolor="#FFFF99" class="borde"><strong>DIRECCION:</strong></td>
+    <td colspan="3" align="left" bgcolor="#FFFF99" class="borde">cabrera 3323  - bs as</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">23</td>
+    <td>&nbsp;</td>
+    <td align="left" bgcolor="#FFFF99" class="borde"><strong>TELEFONO&nbsp;:</strong></td>
+    <td colspan="3" align="left" bgcolor="#FFFF99" class="borde">48040084 1133098337</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">24</td>
+    <td>&nbsp;</td>
+    <td align="left" bgcolor="#FFFF99" class="borde"><strong>MAIL:</strong></td>
+    <td colspan="3" align="left" bgcolor="#FFFF99" class="borde">malenadigloria@hotmail.com</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">25</td>
+    <td>&nbsp;</td>
+    <td align="left">&nbsp;</td>
+    <td align="left">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">26</td>
+    <td>&nbsp;</td>
+    <td width="193" height="17" align="left" bgcolor="#FFCCCC" class="borde">VCT    Bajar:</td>
+    <td width="125" align="left" bgcolor="#FFCCCC" class="borde">=+D8*25</td>
+    <td width="171" bgcolor="#FFCCCC" class="borde">kcal</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">27</td>
+    <td>&nbsp;</td>
+    <td height="17" align="left" bgcolor="#FFCCCC" class="borde">VCT Mant.:</td>
+    <td align="left" bgcolor="#FFCCCC" class="borde">=+D8*30</td>
+    <td bgcolor="#FFCCCC" class="borde">kcal</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">28</td>
+    <td>&nbsp;</td>
+    <td align="left">&nbsp;</td>
+    <td align="left">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">29</td>
+    <td>&nbsp;</td>
+    <td width="193" height="17" align="left" bgcolor="#FFCCCC" class="borde">BMI&nbsp;</td>
+    <td width="125" align="left" bgcolor="#FFCCCC" class="borde">20</td>
+    <td width="171" bgcolor="#FFCCCC" class="borde">22</td>
+    <td width="124" bgcolor="#FFCCCC" class="borde">24</td>
+    <td bgcolor="#FFCCCC" class="borde">25</td>
+    <td bgcolor="#FFCCCC" class="borde">30</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">30</td>
+    <td>&nbsp;</td>
+    <td align="left" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="left" bgcolor="#FFCCCC" class="borde">=D6*D6*20</td>
+    <td bgcolor="#FFCCCC" class="borde">=D6*D6*22</td>
+    <td bgcolor="#FFCCCC" class="borde">=D6*D6*24</td>
+    <td bgcolor="#FFCCCC" class="borde">=D6*D6*25</td>
+    <td bgcolor="#FFCCCC" class="borde">=D6*D6*30</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">31</td>
+    <td>&nbsp;</td>
+    <td align="left">&nbsp;</td>
+    <td align="left">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">32</td>
+    <td>&nbsp;</td>
+    <td align="left">&nbsp;</td>
+    <td align="left">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">33</td>
+    <td>&nbsp;</td>
+    <td align="left"><p>Peso m&iacute;nimo:</p>    </td>
+    <td colspan="5" align="left">49,000</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">34</td>
+    <td>&nbsp;</td>
+    <td align="left">Peso m&aacute;ximo:</td>
+    <td colspan="5" align="left">52,000</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">35</td>
+    <td>&nbsp;</td>
+    <td align="left">&iquest;Con qui&eacute;n vive? </td>
+    <td colspan="5" align="left">sola</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">36</td>
+    <td>&nbsp;</td>
+    <td align="left"><p>&iquest;Qui&eacute;n cocina? </p>    </td>
+    <td colspan="5" align="left">Yo</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">37</td>
+    <td>&nbsp;</td>
+    <td align="left">&iquest;Qui&eacute;n hace las compras?</td>
+    <td align="left">Yo</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">38</td>
+    <td>&nbsp;</td>
+    <td align="left">&nbsp;</td>
+    <td align="left">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">39</td>
+    <td>&nbsp;</td>
+    <td align="left" bgcolor="#FFFFCC" class="borde">PESO IDEAL :</td>
+    <td align="left" bgcolor="#FFFFCC" class="borde">=SI(D7=&quot;M&quot;;(D6*100-150)*2,72/2,5+47,7;(D6*100-150)*2,27/2,5+45,5)</td>
+    <td align="left" bgcolor="#FFFFCC" class="borde">kg.</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">40</td>
+    <td>&nbsp;</td>
+    <td align="left" bgcolor="#FFFFCC" class="borde"> % DE PESO IDEAL :</td>
+    <td align="left" bgcolor="#FFFFCC" class="borde">=D8/D39*100</td>
+    <td align="left" bgcolor="#FFFFCC" class="borde">=SI(D40&lt;75;&quot;DESNUTRICION SEVERA&quot;;SI(D40&lt;85;&quot;DESNUTRICION MODERADA&quot;;SI(D40&lt;90;&quot;DESNUTRICION LEVE&quot;;SI(D40&lt;110;&quot;NORMAL&quot;;SI(D40&lt;120;&quot;SOBREPESO&quot;;SI(D40&lt;140;&quot;OBESIDAD 1&quot;;SI(D40&lt;180;&quot;OBESIDAD 2&quot;;&quot;OBESIDAD MORBIDA&quot;)))))))</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">41</td>
+    <td>&nbsp;</td>
+    <td align="left" bgcolor="#FFFFCC" class="borde">INDICE BODY MASS INDEX :</td>
+    <td align="left" bgcolor="#FFFFCC" class="borde">=D8/((D6*100/100)*(D6*100/100))</td>
+    <td align="left" bgcolor="#FFFFCC" class="borde">=SI(D41&lt;18,5;&quot;BAJO PESO&quot;;SI(D41&lt;25;&quot;NORMAL&quot;;SI(D41&lt;30;&quot;SOBREPESO 1&quot;;SI(D41&lt;40;&quot;SOBREPESO 2&quot;;&quot;SOBREPESO 3&quot;))))</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">42</td>
+    <td>&nbsp;</td>
+    <td align="left" bgcolor="#FFFFCC" class="borde">% DE PESO USUAL :</td>
+    <td align="left" bgcolor="#FFFFCC" class="borde">=D8/D10*100</td>
+    <td align="left" bgcolor="#FFFFCC" class="borde">=SI(D42&lt;75;&quot;DESNUTRICION SEVERA&quot;;SI(D42&lt;85;&quot;DESNUTRICION MODERADA&quot;;SI(D42&lt;90;&quot;DESNUTRICION LEVE&quot;;SI(D42&lt;110;&quot;NORMAL&quot;;SI(D42&lt;120;&quot;SOBREPESO&quot;;SI(D42&lt;140;&quot;OBESIDAD 1&quot;;SI(D42&lt;180;&quot;OBESIDAD 2&quot;;&quot;OBESIDAD MORBIDA&quot;)))))))</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">43</td>
+    <td>&nbsp;</td>
+    <td align="left" bgcolor="#FFFFCC" class="borde">CONTEXTURA :</td>
+    <td align="left" bgcolor="#FFFFCC" class="borde">=SI(D7=&quot;M&quot;;SI(E43&gt;10,4;&quot;PEQUE&Ntilde;A&quot;;SI(E43&gt;9,6;&quot;MEDIANA&quot;;&quot;GRANDE&quot;));SI(E43&gt;11;&quot;PEQUE&Ntilde;A&quot;;SI(E43&gt;10,1;&quot;MEDIANA&quot;;&quot;GRANDE&quot;)))</td>
+    <td align="left" bgcolor="#FFFFCC" class="Estilo3">=D6*100/D11</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">44</td>
+    <td>&nbsp;</td>
+    <td align="left" bgcolor="#FFFFCC" class="borde">GRADO DE SOBREPESO :</td>
+    <td align="left" bgcolor="#FFFFCC" class="borde">=SI(D41&gt;40;&quot;OBESIDAD GRAVE&quot;;SI(D41&gt;30;&quot;OBESIDAD MEDIA&quot;;SI(D41&gt;25;&quot;SOBREPESO&quot;;&quot;NO PRESENTA&quot;)))</td>
+    <td align="left" bgcolor="#FFFFCC" class="borde">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">45</td>
+    <td>&nbsp;</td>
+    <td align="left">&nbsp;</td>
+    <td align="left">&nbsp;</td>
+    <td align="left">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">46</td>
+    <td>&nbsp;</td>
+    <td align="left">&nbsp;</td>
+    <td align="left">&nbsp;</td>
+    <td align="left">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">47</td>
+    <td colspan="4" align="left"><span class="Estilo1">Resultados de An&aacute;lisis </span></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">48</td>
+    <td width="165" height="17" align="left" bgcolor="#FFCCCC" class="borde">Fecha</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCCCC" class="Estilo2">&nbsp;</td>
+    <td align="center" bgcolor="#FFCCCC" class="Estilo2">&nbsp;</td>
+    <td width="124" align="center" bgcolor="#FFCFCE" class="Estilo2">&nbsp;</td>
+    <td width="119" align="center" bgcolor="#FFCFCE" class="Estilo2">&nbsp;</td>
+    <td width="107">&nbsp;</td>
+    <td width="108">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">49</td>
+    <td height="17" align="left" bgcolor="#FFCCCC" class="borde">An&aacute;lisis</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCFCE" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCFCE" class="borde">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">50</td>
+    <td height="17" align="left" bgcolor="#FFCCCC" class="borde">Gl&oacute;bulos    rojos</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCFCE" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCFCE" class="borde">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">51</td>
+    <td height="17" align="left" bgcolor="#FFCCCC" class="borde">Hematocrito</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCFCE" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCFCE" class="borde">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">52</td>
+    <td height="17" align="left" bgcolor="#FFCCCC" class="borde">Hemoglobina</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCFCE" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCFCE" class="borde">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">53</td>
+    <td height="17" align="left" bgcolor="#FFCCCC" class="borde">Colesterol    total</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCFCE" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCFCE" class="borde">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">54</td>
+    <td height="17" align="left" bgcolor="#FFCCCC" class="borde">HDL</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCFCE" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCFCE" class="borde">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">55</td>
+    <td height="17" align="left" bgcolor="#FFCCCC" class="borde">LDL</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCFCE" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCFCE" class="borde">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">56</td>
+    <td height="17" align="left" bgcolor="#FFCCCC" class="borde">Relaci&oacute;n&nbsp;</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCFCE" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCFCE" class="borde">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">57</td>
+    <td height="17" align="left" bgcolor="#FFCCCC" class="borde">TAG</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCFCE" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCFCE" class="borde">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">58</td>
+    <td height="17" align="left" bgcolor="#FFCCCC" class="borde">Glucemia</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCFCE" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCFCE" class="borde">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">59</td>
+    <td height="17" align="left" bgcolor="#FFCCCC" class="borde">Urea</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCFCE" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCFCE" class="borde">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">60</td>
+    <td height="17" align="left" bgcolor="#FFCCCC" class="borde">L&iacute;pidos    Totales</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCFCE" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCFCE" class="borde">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">61</td>
+    <td align="left" bgcolor="#FFCCCC" class="borde">T3</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCFCE" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCFCE" class="borde">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">62</td>
+    <td align="left" bgcolor="#FFCCCC" class="borde">T4</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCFCE" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCFCE" class="borde">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">63</td>
+    <td align="left" bgcolor="#FFCCCC" class="borde"><p>TSH</p></td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCFCE" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCFCE" class="borde">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">64</td>
+    <td align="left" bgcolor="#FFCCCC" class="borde">Ferritina</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCFCE" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCFCE" class="borde">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">65</td>
+    <td align="left" bgcolor="#FFCCCC" class="borde">Ferremia</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCFCE" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCFCE" class="borde">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="16" class="blanco">66</td>
+    <td align="left" bgcolor="#FFCCCC" class="borde">Insulinemia</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCCCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCFCE" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFCFCE" class="borde">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">67</td>
+    <td align="left">&nbsp;</td>
+    <td align="left">&nbsp;</td>
+    <td align="left">&nbsp;</td>
+    <td align="left">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">68</td>
+    <td align="left">&nbsp;</td>
+    <td align="left">&nbsp;</td>
+    <td align="left">&nbsp;</td>
+    <td align="left">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">69</td>
+    <td width="165" height="17" align="left">Ultima menstruaci&oacute;n: </td>
+    <td width="193" align="left">04/12/2015</td>
+    <td width="125" align="left">&nbsp;</td>
+    <td width="171" align="left">&nbsp;</td>
+    <td width="124">&nbsp;</td>
+    <td width="119">&nbsp;</td>
+    <td width="107">&nbsp;</td>
+    <td width="108">&nbsp;</td>
+    <td width="99">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">70</td>
+    <td height="17" align="left" class="borde">Fecha</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">71</td>
+    <td height="17" align="left" class="borde">Cintura</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">72</td>
+    <td height="17" align="left" class="borde">Cadera</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">73</td>
+    <td height="17" align="left" class="borde">Pierna</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">74</td>
+    <td height="17" align="left" bgcolor="#FFFFCC" class="borde">Peso</td>
+    <td align="center" bgcolor="#FFFFCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFFFCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFFFCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFFFCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFFFCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFFFCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFFFCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFFFCC" class="borde">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="blanco">75</td>
+    <td height="17" align="left" bgcolor="#FFFFCC" class="borde">Diferencia</td>
+    <td align="center" bgcolor="#FFFFCC" class="borde">=ABS(C74-$D$19)</td>
+    <td align="center" bgcolor="#FFFFCC" class="borde">=ABS(D74-$D$19)</td>
+    <td align="center" bgcolor="#FFFFCC" class="borde">=ABS(E74-$D$19)</td>
+    <td align="center" bgcolor="#FFFFCC" class="borde">=ABS(F74-$D$19)</td>
+    <td align="center" bgcolor="#FFFFCC" class="borde">=ABS(G74-$D$19)</td>
+    <td align="center" bgcolor="#FFFFCC" class="borde">=ABS(H74-$D$19)</td>
+    <td align="center" bgcolor="#FFFFCC" class="borde">=ABS(I74-$D$19)</td>
+    <td align="center" bgcolor="#FFFFCC" class="borde">=ABS(J74-$D$19)</td>
+  </tr>
+  <tr>
+    <td class="blanco">76</td>
+    <td height="17" align="left" class="borde">BMI</td>
+    <td align="center" class="borde">=C74/D6/D6</td>
+    <td align="center" class="borde">=D74/D6/D6</td>
+    <td align="center" class="borde">=E74/D6/D6</td>
+    <td align="center" class="borde">=F74/D6/D6</td>
+    <td align="center" class="borde">=G74/D6/D6</td>
+    <td align="center" class="borde">=H74/D6/D6</td>
+    <td align="center" class="borde">=I74/D6/D6</td>
+    <td align="center" class="borde">=J74/D6/D6</td>
+  </tr>
+  <tr>
+    <td class="blanco">77</td>
+    <td height="17" align="left" class="borde">% Grasa</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="17" class="blanco">78</td>
+    <td height="17" align="left" class="borde">kg grasa</td>
+    <td align="center" class="borde">=C74*C77/100</td>
+    <td align="center" class="borde">=D74*D77/100</td>
+    <td align="center" class="borde">=E74*E77/100</td>
+    <td align="center" class="borde">=F74*F77/100</td>
+    <td align="center" class="borde">=G74*G77/100</td>
+    <td align="center" class="borde">=H74*H77/100</td>
+    <td align="center" class="borde">=I74*I77/100</td>
+    <td align="center" class="borde">=J74*J77/100</td>
+  </tr>
+  <tr>
+    <td height="17" class="blanco">79</td>
+    <td align="left">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="17" class="blanco">80</td>
+    <td align="left">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="17" class="blanco">81</td>
+    <td height="17" align="left" class="borde">Fecha</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="17" class="blanco">82</td>
+    <td height="17" align="left" class="borde">Cintura</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="17" class="blanco">83</td>
+    <td height="17" align="left" class="borde">Cadera</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="17" class="blanco">84</td>
+    <td height="17" align="left" class="borde">Pierna</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="17" class="blanco">85</td>
+    <td height="17" align="left" bgcolor="#FFFFCC" class="borde">Peso</td>
+    <td align="center" bgcolor="#FFFFCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFFFCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFFFCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFFFCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFFFCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFFFCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFFFCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFFFCC" class="borde">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="17" class="blanco">86</td>
+    <td height="17" align="left" bgcolor="#FFFFCC" class="borde">Diferencia</td>
+    <td align="center" bgcolor="#FFFFCC" class="borde">=ABS(C85-$D$19)</td>
+    <td align="center" bgcolor="#FFFFCC" class="borde">=ABS(D85-$D$19)</td>
+    <td align="center" bgcolor="#FFFFCC" class="borde">=ABS(E85-$D$19)</td>
+    <td align="center" bgcolor="#FFFFCC" class="borde">=ABS(F85-$D$19)</td>
+    <td align="center" bgcolor="#FFFFCC" class="borde">=ABS(G85-$D$19)</td>
+    <td align="center" bgcolor="#FFFFCC" class="borde">=ABS(H85-$D$19)</td>
+    <td align="center" bgcolor="#FFFFCC" class="borde">=ABS(I85-$D$19)</td>
+    <td align="center" bgcolor="#FFFFCC" class="borde">=ABS(J85-$D$19)</td>
+  </tr>
+  <tr>
+    <td height="17" class="blanco">87</td>
+    <td height="17" align="left" class="borde">BMI</td>
+    <td align="center" class="borde">=C85/D6/D6</td>
+    <td align="center" class="borde">=D85/D6/D6</td>
+    <td align="center" class="borde">=E85/D6/D6</td>
+    <td align="center" class="borde">=F85/D6/D6</td>
+    <td align="center" class="borde">=G85/D6/D6</td>
+    <td align="center" class="borde">=H85/D6/D6</td>
+    <td align="center" class="borde">=I85/D6/D6</td>
+    <td align="center" class="borde">=J85/D6/D6</td>
+  </tr>
+  <tr>
+    <td height="17" class="blanco">88</td>
+    <td height="17" align="left" class="borde">% Grasa</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="17" class="blanco">89</td>
+    <td height="17" align="left" class="borde">kg grasa</td>
+    <td align="center" class="borde">=C85*C88/100</td>
+    <td align="center" class="borde">=D85*D88/100</td>
+    <td align="center" class="borde">=E85*E88/100</td>
+    <td align="center" class="borde">=F85*F88/100</td>
+    <td align="center" class="borde">=G85*G88/100</td>
+    <td align="center" class="borde">=H85*H88/100</td>
+    <td align="center" class="borde">=I85*I88/100</td>
+    <td align="center" class="borde">=J85*J88/100</td>
+  </tr>
+  <tr>
+    <td height="17" class="blanco">90</td>
+    <td height="17">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="17" class="blanco">91</td>
+    <td height="17">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="17" class="blanco">92</td>
+    <td height="17" align="left" class="borde">Fecha</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="17" class="blanco">93</td>
+    <td height="17" align="left" class="borde">Cintura</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="17" class="blanco">94</td>
+    <td height="17" align="left" class="borde">Cadera</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="17" class="blanco">95</td>
+    <td height="17" align="left" class="borde">Pierna</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="17" class="blanco">96</td>
+    <td height="17" align="left" bgcolor="#FFFFCC" class="borde">Peso</td>
+    <td align="center" bgcolor="#FFFFCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFFFCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFFFCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFFFCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFFFCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFFFCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFFFCC" class="borde">&nbsp;</td>
+    <td align="center" bgcolor="#FFFFCC" class="borde">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="17" class="blanco">97</td>
+    <td height="17" align="left" bgcolor="#FFFFCC" class="borde">Diferencia</td>
+    <td align="center" bgcolor="#FFFFCC" class="borde">=ABS(C96-$D$19)</td>
+    <td align="center" bgcolor="#FFFFCC" class="borde">=ABS(D96-$D$19)</td>
+    <td align="center" bgcolor="#FFFFCC" class="borde">=ABS(E96-$D$19)</td>
+    <td align="center" bgcolor="#FFFFCC" class="borde">=ABS(F96-$D$19)</td>
+    <td align="center" bgcolor="#FFFFCC" class="borde">=ABS(G96-$D$19)</td>
+    <td align="center" bgcolor="#FFFFCC" class="borde">=ABS(H96-$D$19)</td>
+    <td align="center" bgcolor="#FFFFCC" class="borde">=ABS(I96-$D$19)</td>
+    <td align="center" bgcolor="#FFFFCC" class="borde">=ABS(J96-$D$19)</td>
+  </tr>
+  <tr>
+    <td height="17" class="blanco">98</td>
+    <td height="17" align="left" class="borde">BMI</td>
+    <td align="center" class="borde">=C96/D6/D6</td>
+    <td align="center" class="borde">=D96/D6/D6</td>
+    <td align="center" class="borde">=E96/D6/D6</td>
+    <td align="center" class="borde">=F96/D6/D6</td>
+    <td align="center" class="borde">=G96/D6/D6</td>
+    <td align="center" class="borde">=H96/D6/D6</td>
+    <td align="center" class="borde">=I96/D6/D6</td>
+    <td align="center" class="borde">=J96/D6/D6</td>
+  </tr>
+  <tr>
+    <td height="17" class="blanco">99</td>
+    <td height="17" align="left" class="borde">% Grasa</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+    <td align="center" class="borde">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="17" class="blanco">100</td>
+    <td height="17" align="left" class="borde">kg grasa</td>
+    <td align="center" class="borde">=C96*C99/100</td>
+    <td align="center" class="borde">=D96*D99/100</td>
+    <td align="center" class="borde">=E96*E99/100</td>
+    <td align="center" class="borde">=F96*F99/100</td>
+    <td align="center" class="borde">=G96*G99/100</td>
+    <td align="center" class="borde">=H96*H99/100</td>
+    <td align="center" class="borde">=I96*I99/100</td>
+    <td align="center" class="borde">=J96*J99/100</td>
+  </tr>
+  <tr>
+    <td height="17" class="blanco">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="17" class="blanco">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="17" class="blanco">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="17" class="blanco">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>
