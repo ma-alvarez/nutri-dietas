@@ -16,7 +16,7 @@ do
 		RESULTADO=`python parser.py "$DIR/$CARPETA/$file"`
 		if echo $RESULTADO | grep -q "$REGEXP_ERROR"
 		then
-			echo "SE ENCONTRO ERROR"
+			echo "$REGEXP_ERROR"
 			mv "$DIR/$CARPETA/$file" "$DIR/error"
 		else
 			echo $RESULTADO
