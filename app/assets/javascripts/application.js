@@ -178,7 +178,9 @@ function histories_weight(){
 	histories = [];
 	for (i = 0; i < gon.histories.length; i++) { 
 		var history = [new Date(gon.histories[i].date),parseFloat(gon.histories[i].weight)];
-		histories.push(history)
+		if (!Number.isNaN(history[1])) {
+			histories.push(history)
+		} 
 	}
 	return histories
 }
@@ -186,7 +188,9 @@ function histories_waist(){
 	histories = [];
 	for (i = 0; i < gon.histories.length; i++) { 
 		var history = [new Date(gon.histories[i].date),parseFloat(gon.histories[i].waist)];
-		histories.push(history)
+		if (!Number.isNaN(history[1])) {
+			histories.push(history)
+		} 
 	}
 	return histories
 }
@@ -194,7 +198,9 @@ function histories_hip(){
 	histories = [];
 	for (i = 0; i < gon.histories.length; i++) { 
 		var history = [new Date(gon.histories[i].date),parseFloat(gon.histories[i].hip)];
-		histories.push(history)
+		if (!Number.isNaN(history[1])) {
+			histories.push(history)
+		} 
 	}
 	return histories
 }
@@ -202,7 +208,9 @@ function histories_leg(){
 	histories = [];
 	for (i = 0; i < gon.histories.length; i++) { 
 		var history = [new Date(gon.histories[i].date),parseFloat(gon.histories[i].leg)];
-		histories.push(history)
+		if (!Number.isNaN(history[1])) {
+			histories.push(history)
+		} 
 	}
 	return histories
 }
@@ -210,7 +218,9 @@ function histories_fat(){
 	histories = [];
 	for (i = 0; i < gon.histories.length; i++) { 
 		var history = [new Date(gon.histories[i].date),parseFloat(gon.histories[i].fat)];
-		histories.push(history)
+		if (!Number.isNaN(history[1])) {
+			histories.push(history)
+		} 
 	}
 	return histories
 }
@@ -250,7 +260,7 @@ $(document).on("ready page:change", function() {
 
 	        var options = {
 	          hAxis: {title:'Fecha'},
-	          vAxis: {title:'Peso [kg]'},
+	          vAxis: {title:'Peso [kg]',minValue: 0},
 	          chartArea: {width:'50%'},	
 	          legend: 'none',
 	        };
@@ -268,7 +278,7 @@ $(document).on("ready page:change", function() {
 
 	        var options = {
 	          hAxis: {title:'Fecha'},
-	          vAxis: {title:'Peso [kg]'},
+	          vAxis: {title:'Cintura [cm]'},
 	          chartArea: {width:'50%'},	
 	          legend: 'none',
 	        };
@@ -286,7 +296,7 @@ $(document).on("ready page:change", function() {
 
 	        var options = {
 	          hAxis: {title:'Fecha'},
-	          vAxis: {title:'Peso [kg]'},
+	          vAxis: {title:'Cadera [cm]'},
 	          chartArea: {width:'50%'},	
 	          legend: 'none',
 	        };
@@ -304,7 +314,7 @@ $(document).on("ready page:change", function() {
 
 	        var options = {
 	          hAxis: {title:'Fecha'},
-	          vAxis: {title:'Peso [kg]'},
+	          vAxis: {title:'Pierna [cm]'},
 	          chartArea: {width:'50%'},	
 	          legend: 'none',
 	        };
@@ -322,7 +332,7 @@ $(document).on("ready page:change", function() {
 
 	        var options = {
 	          hAxis: {title:'Fecha'},
-	          vAxis: {title:'Peso [kg]'},
+	          vAxis: {title:'Grasa [kg]',minValue: 0},
 	          chartArea: {width:'50%'},	
 	          legend: 'none',
 	        };
