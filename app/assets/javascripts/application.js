@@ -208,30 +208,25 @@ $(document).on("ready page:change", function() {
 	$('#registration_half_vegetarian').bind('change',function () {half_vegetarian();});
 	$('#user_social_security').bind('change',function () {social_security();});
 
-	google.setOnLoadCallback(drawChart);
-      function drawChart() {
-        var data = new google.visualization.DataTable();
-        data.addColumn({ type: 'date', id: 'Fecha' });
-        data.addColumn({ type: 'number', id: 'Peso' });
-        data.addRows(histories_js());
+	google.charts.load('current', {'packages':['corechart']});
+	google.charts.setOnLoadCallback(drawChart);
+		function drawChart() {
+	        var data = new google.visualization.DataTable();
+	        data.addColumn({ type: 'date', id: 'Fecha' });
+	        data.addColumn({ type: 'number', id: 'Peso' });
+	        data.addRows(histories_js());
 
-        var options = {
-          hAxis: {title:'Fecha'},
-          vAxis: {title:'Peso [kg]'},
-          chartArea: {width:'50%'},
-          legend: 'none',
-          trendlines: {
-            0: {
-              type: 'linear',
-              tooltip: true
-            }
-          }
-        };
+	        var options = {
+	          hAxis: {title:'Fecha'},
+	          vAxis: {title:'Peso [kg]'},
+	          chartArea: {width:'50%'},	
+	          legend: 'none',
+	        };
 
-        var chartLinear = new google.visualization.ScatterChart(document.getElementById('chartLinear'));
-        chartLinear.draw(data, options);
+	        var chart = new google.visualization.LineChart(document.getElementById('linechart_material'));
+	        chart.draw(data, options);
 
-      }
+	      }
 
 google.setOnLoadCallback(drawBasic);
 
