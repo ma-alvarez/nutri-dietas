@@ -174,10 +174,42 @@ function social_security() {
 
 }
 
-function histories_js(){
+function histories_weight(){
 	histories = [];
 	for (i = 0; i < gon.histories.length; i++) { 
 		var history = [new Date(gon.histories[i].date),parseFloat(gon.histories[i].weight)];
+		histories.push(history)
+	}
+	return histories
+}
+function histories_waist(){
+	histories = [];
+	for (i = 0; i < gon.histories.length; i++) { 
+		var history = [new Date(gon.histories[i].date),parseFloat(gon.histories[i].waist)];
+		histories.push(history)
+	}
+	return histories
+}
+function histories_hip(){
+	histories = [];
+	for (i = 0; i < gon.histories.length; i++) { 
+		var history = [new Date(gon.histories[i].date),parseFloat(gon.histories[i].hip)];
+		histories.push(history)
+	}
+	return histories
+}
+function histories_leg(){
+	histories = [];
+	for (i = 0; i < gon.histories.length; i++) { 
+		var history = [new Date(gon.histories[i].date),parseFloat(gon.histories[i].leg)];
+		histories.push(history)
+	}
+	return histories
+}
+function histories_fat(){
+	histories = [];
+	for (i = 0; i < gon.histories.length; i++) { 
+		var history = [new Date(gon.histories[i].date),parseFloat(gon.histories[i].fat)];
 		histories.push(history)
 	}
 	return histories
@@ -209,12 +241,12 @@ $(document).on("ready page:change", function() {
 	$('#user_social_security').bind('change',function () {social_security();});
 
 	google.charts.load('current', {'packages':['corechart']});
-	google.charts.setOnLoadCallback(drawChart);
-		function drawChart() {
+	google.charts.setOnLoadCallback(drawChartWeight);
+		function drawChartWeight() {
 	        var data = new google.visualization.DataTable();
 	        data.addColumn({ type: 'date', id: 'Fecha' });
 	        data.addColumn({ type: 'number', id: 'Peso' });
-	        data.addRows(histories_js());
+	        data.addRows(histories_weight());
 
 	        var options = {
 	          hAxis: {title:'Fecha'},
@@ -223,7 +255,79 @@ $(document).on("ready page:change", function() {
 	          legend: 'none',
 	        };
 
-	        var chart = new google.visualization.LineChart(document.getElementById('linechart_material'));
+	        var chart = new google.visualization.LineChart(document.getElementById('linechart_weight'));
+	        chart.draw(data, options);
+
+	      }
+	google.charts.setOnLoadCallback(drawChartWaist);
+		function drawChartWaist() {
+	        var data = new google.visualization.DataTable();
+	        data.addColumn({ type: 'date', id: 'Fecha' });
+	        data.addColumn({ type: 'number', id: 'Cintura' });
+	        data.addRows(histories_waist());
+
+	        var options = {
+	          hAxis: {title:'Fecha'},
+	          vAxis: {title:'Peso [kg]'},
+	          chartArea: {width:'50%'},	
+	          legend: 'none',
+	        };
+
+	        var chart = new google.visualization.LineChart(document.getElementById('linechart_waist'));
+	        chart.draw(data, options);
+
+	      }
+	google.charts.setOnLoadCallback(drawChartHip);
+		function drawChartHip() {
+	        var data = new google.visualization.DataTable();
+	        data.addColumn({ type: 'date', id: 'Fecha' });
+	        data.addColumn({ type: 'number', id: 'Cadera' });
+	        data.addRows(histories_hip());
+
+	        var options = {
+	          hAxis: {title:'Fecha'},
+	          vAxis: {title:'Peso [kg]'},
+	          chartArea: {width:'50%'},	
+	          legend: 'none',
+	        };
+
+	        var chart = new google.visualization.LineChart(document.getElementById('linechart_hip'));
+	        chart.draw(data, options);
+
+	      }
+	google.charts.setOnLoadCallback(drawChartLeg);
+		function drawChartLeg() {
+	        var data = new google.visualization.DataTable();
+	        data.addColumn({ type: 'date', id: 'Fecha' });
+	        data.addColumn({ type: 'number', id: 'Pierna' });
+	        data.addRows(histories_leg());
+
+	        var options = {
+	          hAxis: {title:'Fecha'},
+	          vAxis: {title:'Peso [kg]'},
+	          chartArea: {width:'50%'},	
+	          legend: 'none',
+	        };
+
+	        var chart = new google.visualization.LineChart(document.getElementById('linechart_leg'));
+	        chart.draw(data, options);
+
+	      }
+	google.charts.setOnLoadCallback(drawChartFat);
+		function drawChartFat() {
+	        var data = new google.visualization.DataTable();
+	        data.addColumn({ type: 'date', id: 'Fecha' });
+	        data.addColumn({ type: 'number', id: 'Grasa' });
+	        data.addRows(histories_fat());
+
+	        var options = {
+	          hAxis: {title:'Fecha'},
+	          vAxis: {title:'Peso [kg]'},
+	          chartArea: {width:'50%'},	
+	          legend: 'none',
+	        };
+
+	        var chart = new google.visualization.LineChart(document.getElementById('linechart_fat'));
 	        chart.draw(data, options);
 
 	      }
