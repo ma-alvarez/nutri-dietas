@@ -261,7 +261,7 @@ $(document).on("ready page:change", function() {
 	        var options = {
 	          hAxis: {title:'Fecha'},
 	          vAxis: {title:'Peso [kg]',minValue: 0},
-	          chartArea: {width:'50%'},	
+	          chartArea: {width:'80%'},	
 	          legend: 'none',
 	        };
 
@@ -279,7 +279,7 @@ $(document).on("ready page:change", function() {
 	        var options = {
 	          hAxis: {title:'Fecha'},
 	          vAxis: {title:'Cintura [cm]'},
-	          chartArea: {width:'50%'},	
+	          chartArea: {width:'80%'},	
 	          legend: 'none',
 	        };
 
@@ -297,7 +297,7 @@ $(document).on("ready page:change", function() {
 	        var options = {
 	          hAxis: {title:'Fecha'},
 	          vAxis: {title:'Cadera [cm]'},
-	          chartArea: {width:'50%'},	
+	          chartArea: {width:'80%'},	
 	          legend: 'none',
 	        };
 
@@ -315,7 +315,7 @@ $(document).on("ready page:change", function() {
 	        var options = {
 	          hAxis: {title:'Fecha'},
 	          vAxis: {title:'Pierna [cm]'},
-	          chartArea: {width:'50%'},	
+	          chartArea: {width:'80%'},	
 	          legend: 'none',
 	        };
 
@@ -333,7 +333,7 @@ $(document).on("ready page:change", function() {
 	        var options = {
 	          hAxis: {title:'Fecha'},
 	          vAxis: {title:'Grasa [kg]',minValue: 0},
-	          chartArea: {width:'50%'},	
+	          chartArea: {width:'80%'},	
 	          legend: 'none',
 	        };
 
