@@ -14,6 +14,7 @@ ActiveAdmin.register SocialSecurity do
   index do
     selectable_column
     column :name
+    column :active
     actions
   end
 
@@ -21,6 +22,7 @@ ActiveAdmin.register SocialSecurity do
   form do |f|
     f.inputs "Detalles de Obra Social" do
       f.input :name
+      f.input :active
       actions
     end
   end
@@ -28,6 +30,7 @@ ActiveAdmin.register SocialSecurity do
   show do
     attributes_table do
       row :name
+      row :active
     end
   end
 

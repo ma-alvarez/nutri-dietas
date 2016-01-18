@@ -365,5 +365,7 @@ es:
         fats_value: "Grasa bruta"
       plan:
         name: "Nombre"
+        active: "Activo"
       social_security:
         name: "Nombre"
+        active: "Activa"

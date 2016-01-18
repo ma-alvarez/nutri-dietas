@@ -10,6 +10,7 @@ ActiveAdmin.register Plan do
   index do
     selectable_column
     column :name
+    column :active
     actions
   end
 
@@ -17,6 +18,7 @@ ActiveAdmin.register Plan do
   form do |f|
     f.inputs "Detalles del Plan" do
       f.input :name
+      f.input :active
       actions
     end
   end
@@ -24,6 +26,7 @@ ActiveAdmin.register Plan do
   show do
     attributes_table do
       row :name
+      row :active
     end
   end
 
