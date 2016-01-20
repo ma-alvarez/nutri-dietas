@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
-  devise :database_authenticatable, :registerable,
+  devise :database_authenticatable, :registerable, :confirmable,
          :recoverable, :rememberable, :trackable, :validatable
 
   SOCIAL_SECURITY_TYPES = [['Particular','PARTICULAR'],['OSDE','OSDE'],['OMINT','OMINT'],['DOSUBA','DOSUBA'],['Galeno','GALENO'],['Swiss Medical','SWISS_MEDICAL'],['Simeco','SIMECO'],['Medicus','MEDICUS'],['SCIS','SCIS'],['Corpomedicim','CORPOMEDICIM'],['Premedic','PREMEDIC'],['Otra','OTRA']]
