@@ -61,13 +61,15 @@
                 <div class="col-md-3">
                   <div class="form-group">
                     <%= f.label :social_security, class: "control-label" %>
-                    <%= f.select(:social_security, User::SOCIAL_SECURITY_TYPES, {}, {class: "form-control", required: true}) %>
+                 <%= f.select :social_security, options_for_select(@socials.collect { |social|
+    [social.name, social.id] }, 1), {}, {id: 'social_select', class: "form-control", required: true } %>
                   </div>
                 </div>
                 <div class="col-md-3">
                   <div class="form-group">
                     <%= f.label :social_security_plan, class: "control-label" %>
-                    <%= f.select(:social_security_plan, User::SOCIAL_SECURITY_PLAN_TYPES, {}, {class: "form-control", required: true}) %>
+                <%= f.select :social_security_plan, options_for_select(@plans.collect { |plan|
+          [plan.name, plan.id] }, 0), {}, { id: 'plans_select', class: "form-control", required: true  } %>
                   </div>
                 </div>
                 <div class="col-md-6">
