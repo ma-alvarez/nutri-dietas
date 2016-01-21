@@ -20,19 +20,19 @@ class User < ActiveRecord::Base
   accepts_nested_attributes_for :histories
 
   def min_weight
-    (self.histories.minimum("weight")).round(2)
+    (self.histories.minimum("weight")).round(2) if !self.histories.empty? && !self.histories.nil?
   end
 
   def max_weight
-    (self.histories.maximum("weight")).round(2)
+    (self.histories.maximum("weight")).round(2) if !self.histories.empty? && !self.histories.nil?
   end
 
   def min_weight_date
-    self.histories.min_by(&:weight).date.strftime('%d/%m/%Y')
+    self.histories.min_by(&:weight).date.strftime('%d/%m/%Y')if !self.histories.empty? && !self.histories.nil?
   end
 
   def max_weight_date
-    self.histories.max_by(&:weight).date.strftime('%d/%m/%Y')
+    self.histories.max_by(&:weight).date.strftime('%d/%m/%Y') if !self.histories.empty? && !self.histories.nil?
   end
   
 end
