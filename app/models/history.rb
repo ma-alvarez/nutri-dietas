@@ -2,8 +2,7 @@ class History < ActiveRecord::Base
 	belongs_to :user
 
 	def body_mass_index
-		index = self.weight / (self.user.height * self.user.height)
-    	index.round(2)
+		index = (self.weight / (self.user.height * self.user.height)).round(2) if !self.weight.nil?
 	end
 
 	def body_mass_label
