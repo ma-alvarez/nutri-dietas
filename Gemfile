@@ -35,6 +35,7 @@ gem 'activeadmin', github: 'activeadmin'
 gem 'bootstrap-datepicker-rails'
 gem 'gon'
 gem 'seed_dump'
+#Solo para test
 gem 'mailcatcher'
 
 # Use ActiveModel has_secure_password

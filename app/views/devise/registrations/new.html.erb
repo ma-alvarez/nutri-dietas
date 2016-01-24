@@ -65,14 +65,14 @@
     [social.name, social.id] }, 1), {}, {id: 'social_select', class: "form-control", required: true } %>
                   </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                   <div class="form-group">
                     <%= f.label :social_security_plan, class: "control-label" %>
                 <%= f.select :social_security_plan, options_for_select(@plans.collect { |plan|
           [plan.name, plan.id] }, 0), {}, { id: 'plans_select', class: "form-control", required: true  } %>
                   </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-5">
                   <div class="form-group">
                     <%= f.label :social_security_number, class: "control-label" %>
                     <%= f.text_field :social_security_number, class: "form-control"%>
