@@ -8,6 +8,12 @@ class RegistrationsController < Devise::RegistrationsController
   	super
   end
 
+  def create
+    @socials = SocialSecurity.where("active = ?", true)
+    @plans = Plan.where("social_security_id = ? AND active = ?", @socials.first.id,true)
+    super
+  end
+
   def update_plans
   	@plans = Plan.where("social_security_id = ? AND active = ?", params[:social_security], true)
     respond_to do |format|
