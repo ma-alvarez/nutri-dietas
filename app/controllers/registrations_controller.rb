@@ -1,5 +1,4 @@
 class RegistrationsController < Devise::RegistrationsController
-  include ApplicationHelper
   skip_before_filter :verify_authenticity_token, :only => :create
   
   def new
