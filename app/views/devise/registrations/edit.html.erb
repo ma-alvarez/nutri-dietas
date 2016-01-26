@@ -78,32 +78,6 @@
             </div>
         </div>
     </div>
-  </div>  
-  <div class = "row">
-    <div class="col-md-2">
-        <div class="form-group">
-          <%= f.label :social_security%>
-            <div class="input-group">
-            <%= f.select(:social_security, User::SOCIAL_SECURITY_TYPES, {}) %>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-1">
-        <div class="form-group">
-          <%= f.label :social_security_plan%>
-            <div class="input-group">
-            <%= f.select(:social_security_plan, User::SOCIAL_SECURITY_PLAN_TYPES, {}) %>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="form-group">
-          <%= f.label :social_security_number%>
-            <div class="input-group">
-            <%= f.text_field :social_security_number %>
-            </div>
-        </div>
-    </div>
   </div>
   <div class = "row">
     <div class="col-md-6">
