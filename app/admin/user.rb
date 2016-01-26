@@ -217,7 +217,8 @@ ActiveAdmin.register User do
   filter :name
   filter :last_name
   filter :email
-  filter :social_security, as: :select, collection: User::SOCIAL_SECURITY_TYPES
+  filter :social_security, as: :select, collection: SocialSecurity.all.collect { |social|
+          [social.name, social.name]}
   filter :sex, as: :select, collection: User::SEX
   filter :cellphone
 
@@ -231,8 +232,10 @@ ActiveAdmin.register User do
       f.input :country, as: :string
       f.input :phone
       f.input :cellphone 
-      f.input :social_security, as: :select, collection: User::SOCIAL_SECURITY_TYPES
-      f.input :social_security_plan, as: :select, collection: User::SOCIAL_SECURITY_PLAN_TYPES
+      f.input :social_security, as: :select, collection: SocialSecurity.all.collect { |social|
+          [social.name, social.name]}
+      f.input :social_security_plan, as: :select, collection: Plan.all.collect { |plan|
+          [plan.name, plan.name]}
       f.input :social_security_number
       f.input :marital_status, as: :select, collection: User::MARITAL_STATUS
       f.input :birhtday, start_year: 1910, end_year: 2050

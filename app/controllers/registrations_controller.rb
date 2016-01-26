@@ -14,7 +14,8 @@ class RegistrationsController < Devise::RegistrationsController
   end
 
   def update_plans
-  	@plans = Plan.where("social_security_id = ? AND active = ?", params[:social_security], true)
+    social_security_id = SocialSecurity.where("name = ?", params[:social_security]).first.id
+  	@plans = Plan.where("social_security_id = ? AND active = ?", social_security_id, true)
     respond_to do |format|
       format.js
     end
