@@ -19,7 +19,7 @@
 <% end %> ><%= link_to ' Medidas ', new_history_path, class:"navbar-brand" %>
         <li <% if current_page?(histories_path) %>class="active"
 <% end %> ><%= link_to ' Estadisticas ', histories_path, class:"navbar-brand" %>  
-        <li <% if current_page?("TURNO") %>class="active"
+        <li <% if current_page?("#") %>class="active"
 <% end %> ><%= link_to ' Turnos ', "#", class:"navbar-brand" %></li>        <li <% if current_page?(static_pages_help_path) %>class="active"
 <% end %> ><%= link_to ' Ayuda ', static_pages_help_path, class:"navbar-brand" %></li>
         <li class="dropdown">
