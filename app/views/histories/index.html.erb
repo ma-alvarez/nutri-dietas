@@ -139,17 +139,17 @@
 				<%= f.label :body_mass_index%>
 				<div class="input-group">
 					<%= f.text_field :body_mass_index, :readonly => true, class: "form-control" %>
-					<div class="input-group-addon">km/m&sup2;</div>
+					<div class="input-group-addon">kg/m&sup2;</div>
 				</div>
 				<div class="input-group">
 					<%- if @history.body_mass_label == 'Bajo Peso' %>
                         <h4><span class="label label-warning"><%=@history.body_mass_label%></span></h4>
                     <% end -%>
                     <%- if @history.body_mass_label == 'Normal' %>
-                        <h4><span class="label label-warning"><%=@history.body_mass_label%></span></h4>
+                        <h4><span class="label label-success"><%=@history.body_mass_label%></span></h4>
                     <% end -%>
                     <%- if @history.body_mass_label == 'Sobrepeso' %>
-                        <h4><span class="label label-success"><%=@history.body_mass_label%></span></h4>
+                        <h4><span class="label label-warning"><%=@history.body_mass_label%></span></h4>
                     <% end -%>
                     <%- if @history.body_mass_label == 'Obesidad' %>
                         <h4><span class="label label-danger"><%=@history.body_mass_label%></span></h4>

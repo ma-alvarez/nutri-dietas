@@ -9,14 +9,14 @@ class History < ActiveRecord::Base
 		if self.complete?
 				if self.body_mass_index < 18.5
 					return "Bajo Peso"
-				end
-				if self.body_mass_index >= 18.5 && self.waist < 25
+
+				elsif self.body_mass_index >= 18.5 && self.body_mass_index < 25
 					return "Normal"
-				end
-				if self.body_mass_index >= 25 && self.waist < 30
+					
+				elsif self.body_mass_index >= 25 && self.body_mass_index < 30
 					return "Sobrepeso"
-				end
-				if self.body_mass_index >= 30
+				
+				elsif self.body_mass_index >= 30
 					return "Obesidad"
 				end
 		end
