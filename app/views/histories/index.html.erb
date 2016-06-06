@@ -1,0 +1,164 @@
+<script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1.1','packages':['corechart'], 'language': 'es'}]}"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<%= render :partial => 'dashboard/navigation' %>
+<div class="container theme-showcase" role="main">
+	<div class="jumbotron">
+		<div class="container">
+			<h1>Estadísticas</h1>
+			<p>En esta sección usted podrá seguir su evolución con las dietas asignadas, a través de varios gráficos, conformados por su historial de medidas.</p>
+			<p><a class="btn btn-lg btn-primary" href="/static_pages/help" role="button">Conocer mas &raquo;</a></p>
+		</div>
+	</div>
+</div>
+<div class="container theme-showcase" role="main">
+	<div class="page-header">
+		<h2>Estadisticas</h2>
+	</div>
+	<div align="center">
+		<h4>Peso en función del tiempo</h4>
+		<div id="linechart_weight" style="height: 350px; width: 800px"></div>
+	</div>
+	<div class="row">
+        <div class="col-md-6">
+			<h4>Grasa en función del tiempo</h4>
+			<div id="linechart_fat" style="height: 350px; width: 600px"></div>
+		</div>
+		<div class="col-md-6">
+			<h4>Cintura en función del tiempo</h4>
+			<div id="linechart_waist" style="height: 350px; width: 600px"></div>
+		</div>
+	</div>
+	<div class="row">
+        <div class="col-md-6">
+			<h4>Cadera en función del tiempo</h4>
+			<div id="linechart_hip" style="height: 350px; width: 600px"></div>
+		</div>
+		<div class="col-md-6">
+			<h4>Pierna en función del tiempo</h4>
+			<div id="linechart_leg" style="height: 350px; width: 600px"></div>
+		</div>
+	</div>
+	<h4>Objetivo</h4>
+	<div class="progress progress-striped active">
+  <div class="progress-bar" role="progressbar"
+       aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+       style="width: 50.00%">
+    50% completado
+  </div>
+</div>
+	<div class="page-header">
+		<h2>Medidas</h2>
+	</div>
+	<h4>Estas son sus ultimas medidas cargadas:</h4>
+	<div class = "row">
+		<div class="col-md-2">
+			<div class="form-group">
+				<%= form_for @history, :html => { :class => "form-horizontal " } do |f| %>
+				<%= f.label :weight%>
+				<div class="input-group">
+					<%= f.text_field :weight, :readonly => true, class: "form-control" %>
+					<div class="input-group-addon">kg</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-1"></div>
+		<div class="col-md-2">
+			<div class="form-group">
+				<%= f.label :waist%>
+				<div class="input-group">
+					<%= f.text_field :waist, :readonly => true, class: "form-control" %>
+					<div class="input-group-addon">cm</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-1"></div>
+		<div class="col-md-2">
+			<div class="form-group">
+				<%-if @history.risk%>
+					<%= f.label :risk%>
+				<%-end%>
+				<div class="input-group">
+					<%- if @history.risk == 'Bajo' %>
+                        <h4><span class="label label-success"><%=@history.risk%></span></h4>
+                    <% end -%>
+                    <%- if @history.risk == 'Medio' %>
+                        <h4><span class="label label-warning"><%=@history.risk%></span></h4>
+                    <% end -%>
+                    <%- if @history.risk == 'Alto' %>
+                        <h4><span class="label label-danger"><%=@history.risk%></span></h4>
+                    <% end -%>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class = "row">
+		<div class="col-md-2">
+			<div class="form-group">
+				<%= f.label :hip%>
+				<div class="input-group">
+					<%= f.text_field :hip , :readonly => true, class: "form-control" %>
+					<div class="input-group-addon">cm</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-1"></div>
+		<div class="col-md-2">
+			<div class="form-group">
+				<%= f.label :leg%>
+				<div class="input-group">
+					<%= f.text_field :leg, :readonly => true, class: "form-control" %>
+					<div class="input-group-addon">cm</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class = "row">
+		<div class="col-md-2">
+			<div class="form-group">
+				<%= f.label :fat%>
+				<div class="input-group">
+					<%= f.text_field :fat , :readonly => true, class: "form-control" %>
+					<div class="input-group-addon">%</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-1"></div>
+		<div class="col-md-2">
+			<div class="form-group">
+				<%= f.label :fats_value%>
+				<div class="input-group">
+					<%= f.text_field :fats_value, :readonly => true, class: "form-control" %>
+					<div class="input-group-addon">kg</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-1"></div>
+		<div class="col-md-2">
+			<div class="form-group">
+				<%= f.label :body_mass_index%>
+				<div class="input-group">
+					<%= f.text_field :body_mass_index, :readonly => true, class: "form-control" %>
+					<div class="input-group-addon">kg/m&sup2;</div>
+				</div>
+				<div class="input-group">
+					<%- if @history.body_mass_label == 'Bajo Peso' %>
+                        <h4><span class="label label-warning"><%=@history.body_mass_label%></span></h4>
+                    <% end -%>
+                    <%- if @history.body_mass_label == 'Normal' %>
+                        <h4><span class="label label-success"><%=@history.body_mass_label%></span></h4>
+                    <% end -%>
+                    <%- if @history.body_mass_label == 'Sobrepeso' %>
+                        <h4><span class="label label-warning"><%=@history.body_mass_label%></span></h4>
+                    <% end -%>
+                    <%- if @history.body_mass_label == 'Obesidad' %>
+                        <h4><span class="label label-danger"><%=@history.body_mass_label%></span></h4>
+                    <% end -%>
+				</div>
+			</div>
+		</div>
+	</div>
+	<% end %>
+	<hr>
+	<%= render :partial => 'dashboard/footer' %>
+</div>

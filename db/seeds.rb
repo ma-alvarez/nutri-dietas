@@ -1,7 +1,85 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+User.create!([
+  {email: "pato.lalala@gmail.com", password: "password", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 2, current_sign_in_at: "2015-10-27 18:04:08", last_sign_in_at: "2015-10-27 17:55:11", current_sign_in_ip: "127.0.0.1", last_sign_in_ip: "127.0.0.1", name: "Patricio", last_name: "Navarro", address: "Virrey Arreondo 2782", city: "CABA", country: "Argentina", phone: "45537878", cellphone: "1167861234", social_security: "OSDE", social_security_plan: "310", social_security_number: "4894655628998", marital_status: "SOLTERO", birhtday: "1989-11-09", profesion: "Developer", sex: "M", job_hs: 6, job_type: "MODERADA", weight_max: "75.0", weight_min: "60.0", weight_avg: "68.0", weight_now: "70.0", weight_exp: "64.0", objective: "Aca va el objetivo", family: "Novia", cooks: "SI", buys: "SI", allergies: "", kosher: true, vegetarian: false, ovolacto: false, lacto: false, pork: false, meat: false, chicken: false, fish: false, celiac: false, swallowing: false, mastication: false, nausea: false, diarrhea: false, vomits: true, constipation: false, anemia: false, hypertension: false, diabetes: false, heart_problems: false, overweight: false, cholesterol: false, bulimia: false, anorexia: false, cancer: false, cancer_type: "", illness_other: "", smoker: true, smoker_amount: "5", medication: "", wrist_size: 15, height: "1.83", vitamins: "", sport1: "Running", sport1_frecuency: 2, sport2: "Futbol", sport2_frecuency: 2, sport3: "", sport3_frecuency: nil, menstruation: nil, how_meet: "INTERNET", comments: "Aca van los comentarios", intestinal_diseases: false},
+  {email: "magual89@gmail.com", password: "password", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 5, current_sign_in_at: "2015-11-21 23:09:12", last_sign_in_at: "2015-11-14 22:42:12", current_sign_in_ip: "127.0.0.1", last_sign_in_ip: "127.0.0.1", name: "Matias", last_name: "Alvarez", address: "Av Donato Alvarez 2629", city: "CABA", country: "Argentina", phone: "45536552", cellphone: "1158964340", social_security: "OSDE", social_security_plan: "210", social_security_number: "4894655628998", marital_status: "SOLTERO", birhtday: "1989-02-14", profesion: "Analista de I+D", sex: "M", job_hs: 8, job_type: "LIVIANA", weight_max: "65.0", weight_min: "50.0", weight_avg: "60.0", weight_now: "55.0", weight_exp: "58.0", objective: "Alcanzar mi peso deseado en el menor tiempo posible y mantenerme en el mismo.", family: "Padres, hermanos, abuela", cooks: "NO", buys: "NO", allergies: "", kosher: false, vegetarian: false, ovolacto: false, lacto: false, pork: false, meat: false, chicken: false, fish: false, celiac: false, swallowing: false, mastication: false, nausea: false, diarrhea: false, vomits: false, constipation: false, anemia: false, hypertension: false, diabetes: false, heart_problems: false, overweight: false, cholesterol: false, bulimia: false, anorexia: false, cancer: false, cancer_type: "", illness_other: "", smoker: false, smoker_amount: "", medication: "", wrist_size: 15, height: "1.75", vitamins: "No", sport1: "Running", sport1_frecuency: 2, sport2: "", sport2_frecuency: nil, sport3: "", sport3_frecuency: nil, menstruation: nil, how_meet: "PACIENTE: Nicolás Alvarez", comments: "Aca van los comentarios", intestinal_diseases: false}
+  ])
+History.create!([
+  {date: "2015-10-27", weight: "100.0", waist: "10.0", hip: "37.0", leg: "20.0", fat: "100.0", user_id: 1},
+  {date: "2015-11-03", weight: "68.0", waist: "15.0", hip: "32.0", leg: "17.0", fat: "60.0", user_id: 1},
+  {date: "2015-11-10", weight: "61.5", waist: "18.0", hip: "22.0", leg: "32.0", fat: nil, user_id: 1},
+  {date: "2015-11-17", weight: "50.0", waist: "12.0", hip: "40.0", leg: "32.0", fat: "60.0", user_id: 1},
+  {date: "2015-11-24", weight: "59.7", waist: "12.5", hip: "40.2", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2015-12-01", weight: "50.0", waist: "12.0", hip: "22.0", leg: "22.0", fat: "60.0", user_id: 1},
+  {date: "2015-12-08", weight: "61.5", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-01-1", weight: "61", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-01-2", weight: "62", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-01-3", weight: "63", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-01-4", weight: "64", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-01-5", weight: "65", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-01-6", weight: "66", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-01-7", weight: "67", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-01-8", weight: "68", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-01-9", weight: "69", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-01-10", weight: "70", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-01-11", weight: "71", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-01-12", weight: "72", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-01-13", weight: "73", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-01-14", weight: "74", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-01-15", weight: "75", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-01-16", weight: "76", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-01-17", weight: "77", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-01-18", weight: "78", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-01-19", weight: "79", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-01-20", weight: "80", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-01-21", weight: "81", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-01-22", weight: "82", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-01-23", weight: "83", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-01-24", weight: "84", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-01-25", weight: "85", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-01-26", weight: "86", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-01-27", weight: "87", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-01-28", weight: "88", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-01-29", weight: "89", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-03-1", weight: "56", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-03-2", weight: "57", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-03-3", weight: "58", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-03-4", weight: "59", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-03-5", weight: "60", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-03-6", weight: "61", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-03-7", weight: "62", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-03-8", weight: "63", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-03-9", weight: "64", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-03-10", weight: "65", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-03-11", weight: "66", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-03-12", weight: "67", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-03-13", weight: "68", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-03-14", weight: "69", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-03-15", weight: "70", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-03-16", weight: "71", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-03-17", weight: "72", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-03-18", weight: "73", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-03-19", weight: "74", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-03-20", weight: "75", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-03-21", weight: "76", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-03-22", weight: "77", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-03-23", weight: "78", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-03-24", weight: "79", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-03-25", weight: "80", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-03-26", weight: "81", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-03-27", weight: "82", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-03-28", weight: "83", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2016-03-29", weight: "84", waist: "12.5", hip: "22.0", leg: "29.8", fat: nil, user_id: 1},
+  {date: "2015-10-27", weight: "62.0", waist: "20.0", hip: "35.0", leg: "32.0", fat: nil, user_id: 2}
+])
+Diet.create!([
+  {fecal_incontinence: false, hemacromotosis: false, celiac: false, irritable_colon: false, pregnancy: false, ovolact: false, kosher: false, without_fibers: false, allowed_foods: false, breakfast_fruits: 1, breakfast_lacteals: 1, breakfast_starch: 1, collation_fruits: 2, collation_lacteals: 2, collation_starch: 2, lunch_starch: 2, lunch_vegetables: 3, luch_fats: 3, lunch_fruits: 3, lunch_lacteals: 3, lunch_meats: 4, dinner_starch: 5, dinner_vegetables: 5, dinner_fats: 5, dinner_fruits: 5, dinner_lacteals: 5, dinner_meats: 5, merienda_fruits: 4, merienda_lacteals: 4, merienda_starch: 4, user_id: 1, menu: nil, celiac_menu: nil, infant_menu: nil, ovolact_menu: nil, gastrointestinal_menu: nil, uric_acid_gout: nil, gas_forming_foods: nil, anemia: nil, anticoagulantes: nil, sports_drink: nil, soft_mechanics: nil, cholesterol: nil, breakfast_snacks: nil, diarrhea: nil, diverticulosis: nil, gastritis: nil, hypertension: nil, glycemic_index: nil, osteoporosis: nil, hyperproteic_first_second: nil, hyperproteic_third: nil, hyperproteic_fourth: nil, fruits_vegetables: nil, hc_reduced_plan: nil, cow_proteins: nil, reflux: nil, renal: nil, monohydrate_creatine_sup: nil, vomiting: nil},
+  {fecal_incontinence: false, hemacromotosis: false, celiac: false, irritable_colon: false, pregnancy: false, ovolact: false, kosher: true, without_fibers: false, allowed_foods: false, breakfast_fruits: 1, breakfast_lacteals: 2, breakfast_starch: 3, collation_fruits: 4, collation_lacteals: 1, collation_starch: 2, lunch_starch: 3, lunch_vegetables: 4, luch_fats: 1, lunch_fruits: 2, lunch_lacteals: 3, lunch_meats: 4, dinner_starch: 2, dinner_vegetables: 2, dinner_fats: 1, dinner_fruits: 2, dinner_lacteals: 4, dinner_meats: 3, merienda_fruits: 2, merienda_lacteals: 2, merienda_starch: 3, user_id: 2, menu: nil, celiac_menu: nil, infant_menu: nil, ovolact_menu: nil, gastrointestinal_menu: nil, uric_acid_gout: nil, gas_forming_foods: nil, anemia: nil, anticoagulantes: nil, sports_drink: nil, soft_mechanics: nil, cholesterol: nil, breakfast_snacks: nil, diarrhea: nil, diverticulosis: nil, gastritis: nil, hypertension: nil, glycemic_index: nil, osteoporosis: nil, hyperproteic_first_second: nil, hyperproteic_third: nil, hyperproteic_fourth: nil, fruits_vegetables: nil, hc_reduced_plan: nil, cow_proteins: nil, reflux: nil, renal: nil, monohydrate_creatine_sup: nil, vomiting: nil}
+])
+SocialSecurity.create!([
+  {name:"OSDE",active:true},
+  {name:"Medicus", active:true}])
+Plan.create!([
+  {name:"210",active:true,social_security_id:1},
+  {name:"310", active:true,social_security_id:1},
+  {name:"410", active:true,social_security_id:1},
+  {name:"Azul", active:true,social_security_id:2},
+  {name:"Rojo", active:true,social_security_id:2},])

@@ -1,0 +1,66 @@
+<%= render :partial => 'dashboard/navigation' %>
+<%= form_for @history, :html => { :class => "form-horizontal " } do |f| %>
+<div class="container theme-showcase" role="main">
+	<div class="jumbotron">
+		<div class="container">
+			<h1>Medidas</h1>
+			<p>En esta sección usted podrá ingreasar sus medidas al sistema, ahorrarndo así tiempo en su visita al consultorio.</p>
+            <p><a class="btn btn-lg btn-primary" href="/static_pages/help" role="button">Conocer mas &raquo;</a></p>
+        </div>
+    </div>
+</div>
+<div class="container theme-showcase" role="main">
+	<div class="page-header">
+        <h2>Cargar Medidas</h2>
+    </div>
+    <% if (!@open) %>
+    <div class="alert alert-danger" role="alert">
+        <strong>¡Atencion!</strong> Usted no tiene medidas para cargar.
+      </div>
+      
+    <% else %>
+    <div class = "row">
+   <div class="col-md-2">
+    <div class="form-group">
+       <%= f.label :leg%>
+       <div class="input-group">
+       <%= f.text_field :leg, autofocus: true , class: "form-control", required: true %>
+       <div class="input-group-addon">cm</div>
+   </div>
+   </div>
+</div>
+</div>
+<div class = "row">
+    <div class="col-md-2">
+        <div class="form-group">
+        	<%= f.label :hip%>
+            <div class="input-group">
+            <%= f.text_field :hip, autofocus: true , class: "form-control", required: true %>
+            <div class="input-group-addon">cm</div>
+        </div>
+    </div>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-2">
+        <div class="form-group">
+        	<%= f.label :waist%>
+            <div class="input-group">
+            <%= f.text_field :waist, autofocus: true , class: "form-control", required: true %>
+            <div class="input-group-addon">cm</div>
+        </div>
+        </div>
+    </div>
+</div>
+<div class = "row">
+<div class="col-md-1"></div>
+<div class="col-md-2">
+	<div class="form-group">
+      <%= f.submit "Cargar", class: 'btn btn-lg btn-primary btn-block' %>
+    </div>
+  </div>
+</div>
+	<hr>
+	<%= render :partial => 'dashboard/footer' %>
+  <%=  %> 
+<% end %>
+<% end %>

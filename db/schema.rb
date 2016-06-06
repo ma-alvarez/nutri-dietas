@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150403183636) do
+ActiveRecord::Schema.define(version: 20160119232735) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -83,6 +83,67 @@ ActiveRecord::Schema.define(version: 20150403183636) do
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "menu"
+    t.boolean  "celiac_menu"
+    t.boolean  "infant_menu"
+    t.boolean  "ovolact_menu"
+    t.boolean  "gastrointestinal_menu"
+    t.boolean  "uric_acid_gout"
+    t.boolean  "gas_forming_foods"
+    t.boolean  "anemia"
+    t.boolean  "anticoagulantes"
+    t.boolean  "sports_drink"
+    t.boolean  "soft_mechanics"
+    t.boolean  "cholesterol"
+    t.boolean  "breakfast_snacks"
+    t.boolean  "diarrhea"
+    t.boolean  "diverticulosis"
+    t.boolean  "gastritis"
+    t.boolean  "hypertension"
+    t.boolean  "glycemic_index"
+    t.boolean  "osteoporosis"
+    t.boolean  "hyperproteic_first_second"
+    t.boolean  "hyperproteic_third"
+    t.boolean  "hyperproteic_fourth"
+    t.boolean  "fruits_vegetables"
+    t.boolean  "hc_reduced_plan"
+    t.boolean  "cow_proteins"
+    t.boolean  "reflux"
+    t.boolean  "renal"
+    t.boolean  "monohydrate_creatine_sup"
+    t.boolean  "vomiting"
+    t.boolean  "hepatic"
+    t.boolean  "osteoarthritis"
+    t.boolean  "easter"
+    t.boolean  "christmas"
+    t.boolean  "weight_up"
+  end
+
+  create_table "histories", force: true do |t|
+    t.date     "date"
+    t.decimal  "weight"
+    t.decimal  "waist"
+    t.decimal  "hip"
+    t.decimal  "leg"
+    t.decimal  "fat"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "plans", force: true do |t|
+    t.string   "name"
+    t.integer  "social_security_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.boolean  "active"
+  end
+
+  create_table "social_securities", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.boolean  "active"
   end
 
   create_table "users", force: true do |t|
@@ -166,8 +227,12 @@ ActiveRecord::Schema.define(version: 20150403183636) do
     t.string   "how_meet"
     t.text     "comments"
     t.boolean  "intestinal_diseases"
+    t.string   "confirmation_token"
+    t.datetime "confirmed_at"
+    t.datetime "confirmation_sent_at"
   end
 
+  add_index "users", ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true, using: :btree
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 

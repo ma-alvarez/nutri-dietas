@@ -61,16 +61,18 @@
                 <div class="col-md-3">
                   <div class="form-group">
                     <%= f.label :social_security, class: "control-label" %>
-                    <%= f.select(:social_security, User::SOCIAL_SECURITY_TYPES, {}, {class: "form-control", required: true}) %>
+                 <%= f.select :social_security, options_for_select(@socials.collect { |social|
+    [social.name, social.name] }), {}, {id: 'social_select', class: "form-control", required: true } %>
                   </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                   <div class="form-group">
                     <%= f.label :social_security_plan, class: "control-label" %>
-                    <%= f.select(:social_security_plan, User::SOCIAL_SECURITY_PLAN_TYPES, {}, {class: "form-control", required: true}) %>
+                <%= f.select :social_security_plan, options_for_select(@plans.collect { |plan|
+          [plan.name, plan.name] }), {}, { id: 'plans_select', class: "form-control", required: true  } %>
                   </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-5">
                   <div class="form-group">
                     <%= f.label :social_security_number, class: "control-label" %>
                     <%= f.text_field :social_security_number, class: "form-control"%>
@@ -201,7 +203,7 @@
                 <div class="col-md-4">
                     <div class="form-group">
                     <%= label(:registration,:allergies_true)%>
-                    <%= select(:allergies,:true ,[['NO','NO'],['SI','SI']], {},required: true, class: "form-control") %>
+                    <%= select(:allergies,:true ,[['No','NO'],['Si','SI']], {},required: true, class: "form-control") %>
                   </div>
                 </div>
                 <div class="col-md-6">

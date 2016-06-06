@@ -89,90 +89,57 @@ function allergies() {
 	}      
 }
 
-function social_security() {
-	$("#user_social_security_plan").prop("disabled", false);
-	$("#user_social_security_number").prop("disabled", false);
-	switch($('#user_social_security').val()) {
-		case "PARTICULAR":
-			$("#user_social_security_plan").children('option').hide();
-			$("#user_social_security_plan").children('option[value=""]').show();
-			$("#user_social_security_plan").val('')
-			$("#user_social_security_plan").prop("disabled", true);
-			$("#user_social_security_number").prop("disabled", true);
-			break;
-		case "OSDE":
-			$("#user_social_security_plan").children('option').hide();
-			$("#user_social_security_plan").children('option[value="210"]').show();
-			$("#user_social_security_plan").children('option[value="310"]').show();
-			$("#user_social_security_plan").children('option[value="410"]').show();
-			$("#user_social_security_plan").children('option[value="510"]').show();
-			$("#user_social_security_plan").children('option[value="450"]').show();
-			$("#user_social_security_plan").children('option[value=""]').show();
-			$("#user_social_security_plan").val('');
-			break;
-		case "DOSUBA":
-			$("#user_social_security_plan").children('option').hide();
-			$("#user_social_security_plan").children('option[value="GRADUADOS"]').show();
-			$("#user_social_security_plan").children('option[value="ALUMNOS"]').show();
-			$("#user_social_security_plan").children('option[value=""]').show();
-			$("#user_social_security_plan").val('')
-			break;
-
-		case "OTRA":
-			$("#user_social_security_plan").children('option').hide();
-			$("#user_social_security_plan").children('option[value=""]').show();
-			$("#user_social_security_plan").val('')
-			$("#user_social_security_plan").prop("disabled", true);
-			$("#user_social_security_number").prop("disabled", true);
-			break;
-
-		case "SCIS":
-			$("#user_social_security_plan").children('option').hide();
-			$("#user_social_security_plan").children('option[value="50"]').show();
-			$("#user_social_security_plan").children('option[value="100"]').show();
-			$("#user_social_security_plan").children('option[value="150"]').show();
-			$("#user_social_security_plan").children('option[value="250"]').show();
-			$("#user_social_security_plan").children('option[value="300"]').show();
-			$("#user_social_security_plan").children('option[value="500"]').show();
-			$("#user_social_security_plan").children('option[value="550"]').show();
-			$("#user_social_security_plan").children('option[value="600"]').show();
-			$("#user_social_security_plan").children('option[value="1100"]').show();
-			$("#user_social_security_plan").children('option[value=""]').show();
-			$("#user_social_security_plan").val('')
-			break;
-
-		case "CORPOMEDICIM":
-			$("#user_social_security_plan").children('option').hide();
-			$("#user_social_security_plan").children('option[value="PREMIUM"]').show();
-			$("#user_social_security_plan").children('option[value="GOLD_PREMIUM"]').show();
-			$("#user_social_security_plan").children('option[value="AZUL"]').show();
-			$("#user_social_security_plan").children('option[value=""]').show();
-			$("#user_social_security_plan").val('')
-			break;
-
-		case "PREMEDIC":
-			$("#user_social_security_plan").children('option').hide();
-			$("#user_social_security_plan").children('option[value="0-50"]').show();
-			$("#user_social_security_plan").children('option[value="100"]').show();
-			$("#user_social_security_plan").children('option[value="PMO"]').show();
-			$("#user_social_security_plan").children('option[value="C100"]').show();
-			$("#user_social_security_plan").children('option[value="200"]').show();
-			$("#user_social_security_plan").children('option[value="500"]').show();
-			$("#user_social_security_plan").children('option[value="300"]').show();
-			$("#user_social_security_plan").children('option[value="400"]').show();
-			$("#user_social_security_plan").children('option[value=""]').show();
-			$("#user_social_security_plan").val('')
-			break;
-
-		default:
-			$("#user_social_security_plan").children('option').hide();
-			$("#user_social_security_plan").children('option[value=""]').show();
-			$("#user_social_security_plan").val('')
-			break; 
-
-		}
-
+function histories_weight(){
+	histories = [];
+	for (i = 0; i < gon.histories.length; i++) { 
+		var history = [new Date(gon.histories[i].date),parseFloat(gon.histories[i].weight)];
+		if (!Number.isNaN(history[1])) {
+			histories.push(history)
+		} 
+	}
+	return histories
 }
+function histories_waist(){
+	histories = [];
+	for (i = 0; i < gon.histories.length; i++) { 
+		var history = [new Date(gon.histories[i].date),parseFloat(gon.histories[i].waist)];
+		if (!Number.isNaN(history[1])) {
+			histories.push(history)
+		} 
+	}
+	return histories
+}
+function histories_hip(){
+	histories = [];
+	for (i = 0; i < gon.histories.length; i++) { 
+		var history = [new Date(gon.histories[i].date),parseFloat(gon.histories[i].hip)];
+		if (!Number.isNaN(history[1])) {
+			histories.push(history)
+		} 
+	}
+	return histories
+}
+function histories_leg(){
+	histories = [];
+	for (i = 0; i < gon.histories.length; i++) { 
+		var history = [new Date(gon.histories[i].date),parseFloat(gon.histories[i].leg)];
+		if (!Number.isNaN(history[1])) {
+			histories.push(history)
+		} 
+	}
+	return histories
+}
+function histories_fat(){
+	histories = [];
+	for (i = 0; i < gon.histories.length; i++) { 
+		var history = [new Date(gon.histories[i].date),parseFloat(gon.histories[i].fat)];
+		if (!Number.isNaN(history[1])) {
+			histories.push(history)
+		} 
+	}
+	return histories
+}
+
 $(document).on("ready page:change", function() {
 	how_meet();
 	allergies();
@@ -180,7 +147,9 @@ $(document).on("ready page:change", function() {
 	smoker();
 	half_vegetarian();
 	menstruation();
-	social_security();
+	$(function () {
+  		$('[data-toggle="tooltip"]').tooltip()
+	})
 	$('.datepicker').datepicker({
     	format: "dd/mm/yyyy",
     	startView: 2,
@@ -194,5 +163,121 @@ $(document).on("ready page:change", function() {
 	$('#user_smoker').bind('change',function () {smoker();});
 	$('#registration_half_vegetarian').bind('change',function () {half_vegetarian();});
 	$('#user_social_security').bind('change',function () {social_security();});
+
+	google.charts.load('current', {'packages':['corechart']});
+	google.charts.setOnLoadCallback(drawChartWeight);
+		function drawChartWeight() {
+	        var data = new google.visualization.DataTable();
+	        data.addColumn({ type: 'date', id: 'Fecha' });
+	        data.addColumn({ type: 'number', id: 'Peso' });
+	        data.addRows(histories_weight());
+
+	        var options = {
+	          hAxis: {title:'Fecha'},
+	          vAxis: {title:'Peso [kg]',minValue: 0},
+	          chartArea: {width:'80%'},	
+	          legend: 'none',
+	        };
+
+	        var chart = new google.visualization.LineChart(document.getElementById('linechart_weight'));
+	        chart.draw(data, options);
+
+	      }
+	google.charts.setOnLoadCallback(drawChartWaist);
+		function drawChartWaist() {
+	        var data = new google.visualization.DataTable();
+	        data.addColumn({ type: 'date', id: 'Fecha' });
+	        data.addColumn({ type: 'number', id: 'Cintura' });
+	        data.addRows(histories_waist());
+
+	        var options = {
+	          hAxis: {title:'Fecha'},
+	          vAxis: {title:'Cintura [cm]'},
+	          chartArea: {width:'80%'},	
+	          legend: 'none',
+	        };
+
+	        var chart = new google.visualization.LineChart(document.getElementById('linechart_waist'));
+	        chart.draw(data, options);
+
+	      }
+	google.charts.setOnLoadCallback(drawChartHip);
+		function drawChartHip() {
+	        var data = new google.visualization.DataTable();
+	        data.addColumn({ type: 'date', id: 'Fecha' });
+	        data.addColumn({ type: 'number', id: 'Cadera' });
+	        data.addRows(histories_hip());
+
+	        var options = {
+	          hAxis: {title:'Fecha'},
+	          vAxis: {title:'Cadera [cm]'},
+	          chartArea: {width:'80%'},	
+	          legend: 'none',
+	        };
+
+	        var chart = new google.visualization.LineChart(document.getElementById('linechart_hip'));
+	        chart.draw(data, options);
+
+	      }
+	google.charts.setOnLoadCallback(drawChartLeg);
+		function drawChartLeg() {
+	        var data = new google.visualization.DataTable();
+	        data.addColumn({ type: 'date', id: 'Fecha' });
+	        data.addColumn({ type: 'number', id: 'Pierna' });
+	        data.addRows(histories_leg());
+
+	        var options = {
+	          hAxis: {title:'Fecha'},
+	          vAxis: {title:'Pierna [cm]'},
+	          chartArea: {width:'80%'},	
+	          legend: 'none',
+	        };
+
+	        var chart = new google.visualization.LineChart(document.getElementById('linechart_leg'));
+	        chart.draw(data, options);
+
+	      }
+	google.charts.setOnLoadCallback(drawChartFat);
+		function drawChartFat() {
+	        var data = new google.visualization.DataTable();
+	        data.addColumn({ type: 'date', id: 'Fecha' });
+	        data.addColumn({ type: 'number', id: 'Grasa' });
+	        data.addRows(histories_fat());
+
+	        var options = {
+	          hAxis: {title:'Fecha'},
+	          vAxis: {title:'Grasa [kg]',minValue: 0},
+	          chartArea: {width:'80%'},	
+	          legend: 'none',
+	        };
+
+	        var chart = new google.visualization.LineChart(document.getElementById('linechart_fat'));
+	        chart.draw(data, options);
+
+	      }
+
+google.setOnLoadCallback(drawBasic);
+
+function drawBasic() {
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', '');
+      data.addColumn('number', 'Peso [kg]');
+
+      data.addRows([
+        ['Peso inicial', parseFloat(gon.first_weight)],
+        ['Peso actual', parseFloat(gon.last_weight)],
+        ['Peso objetivo', parseFloat(gon.weight_exp)],
+      ]);
+
+      var options = {
+        chartArea: {width:'50%'},
+      };
+
+      var chart = new google.visualization.ColumnChart(
+        document.getElementById('chart_div'));
+
+      chart.draw(data, options);
+    }
 	
 });
